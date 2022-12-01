@@ -65,12 +65,17 @@ group :development do
 end
 
 gem 'devise'
+# gem 'devise', github: 'heartcombo/devise', branch: 'ca-omniauth-2'
 
 gem 'simple_form'
 
 gem 'faker', :git => 'https://github.com/faker-ruby/faker.git', :branch => 'main'
 
 gem 'omniauth-facebook', '~> 4.0'
+gem 'omniauth'
+gem 'omniauth-github'
+gem 'omniauth-rails_csrf_protection'
+gem 'activerecord-session_store'
 
 group :test do
   # Use system testing [https://guides.rubyonrails.org/testing.html#system-testing]
