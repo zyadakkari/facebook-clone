@@ -70,7 +70,7 @@ gem 'simple_form'
 
 gem 'faker', :git => 'https://github.com/faker-ruby/faker.git', :branch => 'main'
 
-
+gem 'omniauth-facebook', '~> 4.0'
 
 group :test do
   # Use system testing [https://guides.rubyonrails.org/testing.html#system-testing]
@@ -78,3 +78,7 @@ group :test do
   gem "selenium-webdriver"
   gem "webdrivers"
 end
+
+gem "cssbundling-rails", "~> 1.1"
+
+gem "jsbundling-rails", "~> 1.0"
