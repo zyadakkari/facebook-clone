@@ -1,4 +1,6 @@
 Rails.application.routes.draw do
+  root 'posts#index'
+
   get 'friends/index'
   get 'friends/destroy'
   resources :friend_requests

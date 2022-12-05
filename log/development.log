@@ -1328,3 +1328,1383 @@ puma (5.6.5) lib/puma/thread_pool.rb:340:in `with_force_shutdown'
 puma (5.6.5) lib/puma/request.rb:76:in `handle_request'
 puma (5.6.5) lib/puma/server.rb:443:in `process_client'
 puma (5.6.5) lib/puma/thread_pool.rb:147:in `block in spawn_thread'
+Started GET "/users/auth/facebook" for ::1 at 2022-12-01 11:27:52 +0000
+  
+AbstractController::ActionNotFound (The action 'passthru' could not be found for OmniauthController):
+  
+actionpack (7.0.4) lib/abstract_controller/base.rb:146:in `process'
+actionview (7.0.4) lib/action_view/rendering.rb:39:in `process'
+actionpack (7.0.4) lib/action_controller/metal.rb:188:in `dispatch'
+actionpack (7.0.4) lib/action_controller/metal.rb:251:in `dispatch'
+actionpack (7.0.4) lib/action_dispatch/routing/route_set.rb:49:in `dispatch'
+actionpack (7.0.4) lib/action_dispatch/routing/route_set.rb:32:in `serve'
+actionpack (7.0.4) lib/action_dispatch/routing/mapper.rb:18:in `block in <class:Constraints>'
+actionpack (7.0.4) lib/action_dispatch/routing/mapper.rb:48:in `serve'
+actionpack (7.0.4) lib/action_dispatch/journey/router.rb:50:in `block in serve'
+actionpack (7.0.4) lib/action_dispatch/journey/router.rb:32:in `each'
+actionpack (7.0.4) lib/action_dispatch/journey/router.rb:32:in `serve'
+actionpack (7.0.4) lib/action_dispatch/routing/route_set.rb:852:in `call'
+omniauth (2.1.0) lib/omniauth/strategy.rb:202:in `call!'
+omniauth (2.1.0) lib/omniauth/strategy.rb:169:in `call'
+omniauth (2.1.0) lib/omniauth/strategy.rb:202:in `call!'
+omniauth (2.1.0) lib/omniauth/strategy.rb:169:in `call'
+warden (1.2.9) lib/warden/manager.rb:36:in `block in call'
+warden (1.2.9) lib/warden/manager.rb:34:in `catch'
+warden (1.2.9) lib/warden/manager.rb:34:in `call'
+rack (2.2.4) lib/rack/tempfile_reaper.rb:15:in `call'
+rack (2.2.4) lib/rack/etag.rb:27:in `call'
+rack (2.2.4) lib/rack/conditional_get.rb:27:in `call'
+rack (2.2.4) lib/rack/head.rb:12:in `call'
+actionpack (7.0.4) lib/action_dispatch/http/permissions_policy.rb:38:in `call'
+actionpack (7.0.4) lib/action_dispatch/http/content_security_policy.rb:36:in `call'
+rack (2.2.4) lib/rack/session/abstract/id.rb:266:in `context'
+rack (2.2.4) lib/rack/session/abstract/id.rb:260:in `call'
+actionpack (7.0.4) lib/action_dispatch/middleware/cookies.rb:696:in `call'
+activerecord (7.0.4) lib/active_record/migration.rb:603:in `call'
+actionpack (7.0.4) lib/action_dispatch/middleware/callbacks.rb:27:in `block in call'
+activesupport (7.0.4) lib/active_support/callbacks.rb:99:in `run_callbacks'
+actionpack (7.0.4) lib/action_dispatch/middleware/callbacks.rb:26:in `call'
+actionpack (7.0.4) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (7.0.4) lib/action_dispatch/middleware/actionable_exceptions.rb:17:in `call'
+actionpack (7.0.4) lib/action_dispatch/middleware/debug_exceptions.rb:28:in `call'
+web-console (4.2.0) lib/web_console/middleware.rb:132:in `call_app'
+web-console (4.2.0) lib/web_console/middleware.rb:28:in `block in call'
+web-console (4.2.0) lib/web_console/middleware.rb:17:in `catch'
+web-console (4.2.0) lib/web_console/middleware.rb:17:in `call'
+actionpack (7.0.4) lib/action_dispatch/middleware/show_exceptions.rb:26:in `call'
+railties (7.0.4) lib/rails/rack/logger.rb:40:in `call_app'
+railties (7.0.4) lib/rails/rack/logger.rb:25:in `block in call'
+activesupport (7.0.4) lib/active_support/tagged_logging.rb:99:in `block in tagged'
+activesupport (7.0.4) lib/active_support/tagged_logging.rb:37:in `tagged'
+activesupport (7.0.4) lib/active_support/tagged_logging.rb:99:in `tagged'
+railties (7.0.4) lib/rails/rack/logger.rb:25:in `call'
+sprockets-rails (3.4.2) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (7.0.4) lib/action_dispatch/middleware/remote_ip.rb:93:in `call'
+actionpack (7.0.4) lib/action_dispatch/middleware/request_id.rb:26:in `call'
+rack (2.2.4) lib/rack/method_override.rb:24:in `call'
+rack (2.2.4) lib/rack/runtime.rb:22:in `call'
+activesupport (7.0.4) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (7.0.4) lib/action_dispatch/middleware/server_timing.rb:61:in `block in call'
+actionpack (7.0.4) lib/action_dispatch/middleware/server_timing.rb:26:in `collect_events'
+actionpack (7.0.4) lib/action_dispatch/middleware/server_timing.rb:60:in `call'
+actionpack (7.0.4) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (7.0.4) lib/action_dispatch/middleware/static.rb:23:in `call'
+rack (2.2.4) lib/rack/sendfile.rb:110:in `call'
+actionpack (7.0.4) lib/action_dispatch/middleware/host_authorization.rb:137:in `call'
+railties (7.0.4) lib/rails/engine.rb:530:in `call'
+puma (5.6.5) lib/puma/configuration.rb:252:in `call'
+puma (5.6.5) lib/puma/request.rb:77:in `block in handle_request'
+puma (5.6.5) lib/puma/thread_pool.rb:340:in `with_force_shutdown'
+puma (5.6.5) lib/puma/request.rb:76:in `handle_request'
+puma (5.6.5) lib/puma/server.rb:443:in `process_client'
+puma (5.6.5) lib/puma/thread_pool.rb:147:in `block in spawn_thread'
+Started GET "/users/auth/facebook" for ::1 at 2022-12-01 11:27:57 +0000
+  
+AbstractController::ActionNotFound (The action 'passthru' could not be found for OmniauthController):
+  
+actionpack (7.0.4) lib/abstract_controller/base.rb:146:in `process'
+actionview (7.0.4) lib/action_view/rendering.rb:39:in `process'
+actionpack (7.0.4) lib/action_controller/metal.rb:188:in `dispatch'
+actionpack (7.0.4) lib/action_controller/metal.rb:251:in `dispatch'
+actionpack (7.0.4) lib/action_dispatch/routing/route_set.rb:49:in `dispatch'
+actionpack (7.0.4) lib/action_dispatch/routing/route_set.rb:32:in `serve'
+actionpack (7.0.4) lib/action_dispatch/routing/mapper.rb:18:in `block in <class:Constraints>'
+actionpack (7.0.4) lib/action_dispatch/routing/mapper.rb:48:in `serve'
+actionpack (7.0.4) lib/action_dispatch/journey/router.rb:50:in `block in serve'
+actionpack (7.0.4) lib/action_dispatch/journey/router.rb:32:in `each'
+actionpack (7.0.4) lib/action_dispatch/journey/router.rb:32:in `serve'
+actionpack (7.0.4) lib/action_dispatch/routing/route_set.rb:852:in `call'
+omniauth (2.1.0) lib/omniauth/strategy.rb:202:in `call!'
+omniauth (2.1.0) lib/omniauth/strategy.rb:169:in `call'
+omniauth (2.1.0) lib/omniauth/strategy.rb:202:in `call!'
+omniauth (2.1.0) lib/omniauth/strategy.rb:169:in `call'
+warden (1.2.9) lib/warden/manager.rb:36:in `block in call'
+warden (1.2.9) lib/warden/manager.rb:34:in `catch'
+warden (1.2.9) lib/warden/manager.rb:34:in `call'
+rack (2.2.4) lib/rack/tempfile_reaper.rb:15:in `call'
+rack (2.2.4) lib/rack/etag.rb:27:in `call'
+rack (2.2.4) lib/rack/conditional_get.rb:27:in `call'
+rack (2.2.4) lib/rack/head.rb:12:in `call'
+actionpack (7.0.4) lib/action_dispatch/http/permissions_policy.rb:38:in `call'
+actionpack (7.0.4) lib/action_dispatch/http/content_security_policy.rb:36:in `call'
+rack (2.2.4) lib/rack/session/abstract/id.rb:266:in `context'
+rack (2.2.4) lib/rack/session/abstract/id.rb:260:in `call'
+actionpack (7.0.4) lib/action_dispatch/middleware/cookies.rb:696:in `call'
+activerecord (7.0.4) lib/active_record/migration.rb:603:in `call'
+actionpack (7.0.4) lib/action_dispatch/middleware/callbacks.rb:27:in `block in call'
+activesupport (7.0.4) lib/active_support/callbacks.rb:99:in `run_callbacks'
+actionpack (7.0.4) lib/action_dispatch/middleware/callbacks.rb:26:in `call'
+actionpack (7.0.4) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (7.0.4) lib/action_dispatch/middleware/actionable_exceptions.rb:17:in `call'
+actionpack (7.0.4) lib/action_dispatch/middleware/debug_exceptions.rb:28:in `call'
+web-console (4.2.0) lib/web_console/middleware.rb:132:in `call_app'
+web-console (4.2.0) lib/web_console/middleware.rb:28:in `block in call'
+web-console (4.2.0) lib/web_console/middleware.rb:17:in `catch'
+web-console (4.2.0) lib/web_console/middleware.rb:17:in `call'
+actionpack (7.0.4) lib/action_dispatch/middleware/show_exceptions.rb:26:in `call'
+railties (7.0.4) lib/rails/rack/logger.rb:40:in `call_app'
+railties (7.0.4) lib/rails/rack/logger.rb:25:in `block in call'
+activesupport (7.0.4) lib/active_support/tagged_logging.rb:99:in `block in tagged'
+activesupport (7.0.4) lib/active_support/tagged_logging.rb:37:in `tagged'
+activesupport (7.0.4) lib/active_support/tagged_logging.rb:99:in `tagged'
+railties (7.0.4) lib/rails/rack/logger.rb:25:in `call'
+sprockets-rails (3.4.2) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (7.0.4) lib/action_dispatch/middleware/remote_ip.rb:93:in `call'
+actionpack (7.0.4) lib/action_dispatch/middleware/request_id.rb:26:in `call'
+rack (2.2.4) lib/rack/method_override.rb:24:in `call'
+rack (2.2.4) lib/rack/runtime.rb:22:in `call'
+activesupport (7.0.4) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (7.0.4) lib/action_dispatch/middleware/server_timing.rb:61:in `block in call'
+actionpack (7.0.4) lib/action_dispatch/middleware/server_timing.rb:26:in `collect_events'
+actionpack (7.0.4) lib/action_dispatch/middleware/server_timing.rb:60:in `call'
+actionpack (7.0.4) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (7.0.4) lib/action_dispatch/middleware/static.rb:23:in `call'
+rack (2.2.4) lib/rack/sendfile.rb:110:in `call'
+actionpack (7.0.4) lib/action_dispatch/middleware/host_authorization.rb:137:in `call'
+railties (7.0.4) lib/rails/engine.rb:530:in `call'
+puma (5.6.5) lib/puma/configuration.rb:252:in `call'
+puma (5.6.5) lib/puma/request.rb:77:in `block in handle_request'
+puma (5.6.5) lib/puma/thread_pool.rb:340:in `with_force_shutdown'
+puma (5.6.5) lib/puma/request.rb:76:in `handle_request'
+puma (5.6.5) lib/puma/server.rb:443:in `process_client'
+puma (5.6.5) lib/puma/thread_pool.rb:147:in `block in spawn_thread'
+Started GET "/users/auth/github" for ::1 at 2022-12-01 11:27:59 +0000
+  
+AbstractController::ActionNotFound (The action 'passthru' could not be found for OmniauthController):
+  
+actionpack (7.0.4) lib/abstract_controller/base.rb:146:in `process'
+actionview (7.0.4) lib/action_view/rendering.rb:39:in `process'
+actionpack (7.0.4) lib/action_controller/metal.rb:188:in `dispatch'
+actionpack (7.0.4) lib/action_controller/metal.rb:251:in `dispatch'
+actionpack (7.0.4) lib/action_dispatch/routing/route_set.rb:49:in `dispatch'
+actionpack (7.0.4) lib/action_dispatch/routing/route_set.rb:32:in `serve'
+actionpack (7.0.4) lib/action_dispatch/routing/mapper.rb:18:in `block in <class:Constraints>'
+actionpack (7.0.4) lib/action_dispatch/routing/mapper.rb:48:in `serve'
+actionpack (7.0.4) lib/action_dispatch/journey/router.rb:50:in `block in serve'
+actionpack (7.0.4) lib/action_dispatch/journey/router.rb:32:in `each'
+actionpack (7.0.4) lib/action_dispatch/journey/router.rb:32:in `serve'
+actionpack (7.0.4) lib/action_dispatch/routing/route_set.rb:852:in `call'
+omniauth (2.1.0) lib/omniauth/strategy.rb:202:in `call!'
+omniauth (2.1.0) lib/omniauth/strategy.rb:169:in `call'
+omniauth (2.1.0) lib/omniauth/strategy.rb:202:in `call!'
+omniauth (2.1.0) lib/omniauth/strategy.rb:169:in `call'
+warden (1.2.9) lib/warden/manager.rb:36:in `block in call'
+warden (1.2.9) lib/warden/manager.rb:34:in `catch'
+warden (1.2.9) lib/warden/manager.rb:34:in `call'
+rack (2.2.4) lib/rack/tempfile_reaper.rb:15:in `call'
+rack (2.2.4) lib/rack/etag.rb:27:in `call'
+rack (2.2.4) lib/rack/conditional_get.rb:27:in `call'
+rack (2.2.4) lib/rack/head.rb:12:in `call'
+actionpack (7.0.4) lib/action_dispatch/http/permissions_policy.rb:38:in `call'
+actionpack (7.0.4) lib/action_dispatch/http/content_security_policy.rb:36:in `call'
+rack (2.2.4) lib/rack/session/abstract/id.rb:266:in `context'
+rack (2.2.4) lib/rack/session/abstract/id.rb:260:in `call'
+actionpack (7.0.4) lib/action_dispatch/middleware/cookies.rb:696:in `call'
+activerecord (7.0.4) lib/active_record/migration.rb:603:in `call'
+actionpack (7.0.4) lib/action_dispatch/middleware/callbacks.rb:27:in `block in call'
+activesupport (7.0.4) lib/active_support/callbacks.rb:99:in `run_callbacks'
+actionpack (7.0.4) lib/action_dispatch/middleware/callbacks.rb:26:in `call'
+actionpack (7.0.4) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (7.0.4) lib/action_dispatch/middleware/actionable_exceptions.rb:17:in `call'
+actionpack (7.0.4) lib/action_dispatch/middleware/debug_exceptions.rb:28:in `call'
+web-console (4.2.0) lib/web_console/middleware.rb:132:in `call_app'
+web-console (4.2.0) lib/web_console/middleware.rb:28:in `block in call'
+web-console (4.2.0) lib/web_console/middleware.rb:17:in `catch'
+web-console (4.2.0) lib/web_console/middleware.rb:17:in `call'
+actionpack (7.0.4) lib/action_dispatch/middleware/show_exceptions.rb:26:in `call'
+railties (7.0.4) lib/rails/rack/logger.rb:40:in `call_app'
+railties (7.0.4) lib/rails/rack/logger.rb:25:in `block in call'
+activesupport (7.0.4) lib/active_support/tagged_logging.rb:99:in `block in tagged'
+activesupport (7.0.4) lib/active_support/tagged_logging.rb:37:in `tagged'
+activesupport (7.0.4) lib/active_support/tagged_logging.rb:99:in `tagged'
+railties (7.0.4) lib/rails/rack/logger.rb:25:in `call'
+sprockets-rails (3.4.2) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (7.0.4) lib/action_dispatch/middleware/remote_ip.rb:93:in `call'
+actionpack (7.0.4) lib/action_dispatch/middleware/request_id.rb:26:in `call'
+rack (2.2.4) lib/rack/method_override.rb:24:in `call'
+rack (2.2.4) lib/rack/runtime.rb:22:in `call'
+activesupport (7.0.4) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (7.0.4) lib/action_dispatch/middleware/server_timing.rb:61:in `block in call'
+actionpack (7.0.4) lib/action_dispatch/middleware/server_timing.rb:26:in `collect_events'
+actionpack (7.0.4) lib/action_dispatch/middleware/server_timing.rb:60:in `call'
+actionpack (7.0.4) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (7.0.4) lib/action_dispatch/middleware/static.rb:23:in `call'
+rack (2.2.4) lib/rack/sendfile.rb:110:in `call'
+actionpack (7.0.4) lib/action_dispatch/middleware/host_authorization.rb:137:in `call'
+railties (7.0.4) lib/rails/engine.rb:530:in `call'
+puma (5.6.5) lib/puma/configuration.rb:252:in `call'
+puma (5.6.5) lib/puma/request.rb:77:in `block in handle_request'
+puma (5.6.5) lib/puma/thread_pool.rb:340:in `with_force_shutdown'
+puma (5.6.5) lib/puma/request.rb:76:in `handle_request'
+puma (5.6.5) lib/puma/server.rb:443:in `process_client'
+puma (5.6.5) lib/puma/thread_pool.rb:147:in `block in spawn_thread'
+Started GET "/users/auth/facebook" for ::1 at 2022-12-01 11:31:08 +0000
+  
+AbstractController::ActionNotFound (The action 'passthru' could not be found for OmniauthController):
+  
+actionpack (7.0.4) lib/abstract_controller/base.rb:146:in `process'
+actionview (7.0.4) lib/action_view/rendering.rb:39:in `process'
+actionpack (7.0.4) lib/action_controller/metal.rb:188:in `dispatch'
+actionpack (7.0.4) lib/action_controller/metal.rb:251:in `dispatch'
+actionpack (7.0.4) lib/action_dispatch/routing/route_set.rb:49:in `dispatch'
+actionpack (7.0.4) lib/action_dispatch/routing/route_set.rb:32:in `serve'
+actionpack (7.0.4) lib/action_dispatch/routing/mapper.rb:18:in `block in <class:Constraints>'
+actionpack (7.0.4) lib/action_dispatch/routing/mapper.rb:48:in `serve'
+actionpack (7.0.4) lib/action_dispatch/journey/router.rb:50:in `block in serve'
+actionpack (7.0.4) lib/action_dispatch/journey/router.rb:32:in `each'
+actionpack (7.0.4) lib/action_dispatch/journey/router.rb:32:in `serve'
+actionpack (7.0.4) lib/action_dispatch/routing/route_set.rb:852:in `call'
+omniauth (2.1.0) lib/omniauth/strategy.rb:202:in `call!'
+omniauth (2.1.0) lib/omniauth/strategy.rb:169:in `call'
+omniauth (2.1.0) lib/omniauth/strategy.rb:202:in `call!'
+omniauth (2.1.0) lib/omniauth/strategy.rb:169:in `call'
+warden (1.2.9) lib/warden/manager.rb:36:in `block in call'
+warden (1.2.9) lib/warden/manager.rb:34:in `catch'
+warden (1.2.9) lib/warden/manager.rb:34:in `call'
+rack (2.2.4) lib/rack/tempfile_reaper.rb:15:in `call'
+rack (2.2.4) lib/rack/etag.rb:27:in `call'
+rack (2.2.4) lib/rack/conditional_get.rb:27:in `call'
+rack (2.2.4) lib/rack/head.rb:12:in `call'
+actionpack (7.0.4) lib/action_dispatch/http/permissions_policy.rb:38:in `call'
+actionpack (7.0.4) lib/action_dispatch/http/content_security_policy.rb:36:in `call'
+rack (2.2.4) lib/rack/session/abstract/id.rb:266:in `context'
+rack (2.2.4) lib/rack/session/abstract/id.rb:260:in `call'
+actionpack (7.0.4) lib/action_dispatch/middleware/cookies.rb:696:in `call'
+activerecord (7.0.4) lib/active_record/migration.rb:603:in `call'
+actionpack (7.0.4) lib/action_dispatch/middleware/callbacks.rb:27:in `block in call'
+activesupport (7.0.4) lib/active_support/callbacks.rb:99:in `run_callbacks'
+actionpack (7.0.4) lib/action_dispatch/middleware/callbacks.rb:26:in `call'
+actionpack (7.0.4) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (7.0.4) lib/action_dispatch/middleware/actionable_exceptions.rb:17:in `call'
+actionpack (7.0.4) lib/action_dispatch/middleware/debug_exceptions.rb:28:in `call'
+web-console (4.2.0) lib/web_console/middleware.rb:132:in `call_app'
+web-console (4.2.0) lib/web_console/middleware.rb:28:in `block in call'
+web-console (4.2.0) lib/web_console/middleware.rb:17:in `catch'
+web-console (4.2.0) lib/web_console/middleware.rb:17:in `call'
+actionpack (7.0.4) lib/action_dispatch/middleware/show_exceptions.rb:26:in `call'
+railties (7.0.4) lib/rails/rack/logger.rb:40:in `call_app'
+railties (7.0.4) lib/rails/rack/logger.rb:25:in `block in call'
+activesupport (7.0.4) lib/active_support/tagged_logging.rb:99:in `block in tagged'
+activesupport (7.0.4) lib/active_support/tagged_logging.rb:37:in `tagged'
+activesupport (7.0.4) lib/active_support/tagged_logging.rb:99:in `tagged'
+railties (7.0.4) lib/rails/rack/logger.rb:25:in `call'
+sprockets-rails (3.4.2) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (7.0.4) lib/action_dispatch/middleware/remote_ip.rb:93:in `call'
+actionpack (7.0.4) lib/action_dispatch/middleware/request_id.rb:26:in `call'
+rack (2.2.4) lib/rack/method_override.rb:24:in `call'
+rack (2.2.4) lib/rack/runtime.rb:22:in `call'
+activesupport (7.0.4) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (7.0.4) lib/action_dispatch/middleware/server_timing.rb:61:in `block in call'
+actionpack (7.0.4) lib/action_dispatch/middleware/server_timing.rb:26:in `collect_events'
+actionpack (7.0.4) lib/action_dispatch/middleware/server_timing.rb:60:in `call'
+actionpack (7.0.4) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (7.0.4) lib/action_dispatch/middleware/static.rb:23:in `call'
+rack (2.2.4) lib/rack/sendfile.rb:110:in `call'
+actionpack (7.0.4) lib/action_dispatch/middleware/host_authorization.rb:137:in `call'
+railties (7.0.4) lib/rails/engine.rb:530:in `call'
+puma (5.6.5) lib/puma/configuration.rb:252:in `call'
+puma (5.6.5) lib/puma/request.rb:77:in `block in handle_request'
+puma (5.6.5) lib/puma/thread_pool.rb:340:in `with_force_shutdown'
+puma (5.6.5) lib/puma/request.rb:76:in `handle_request'
+puma (5.6.5) lib/puma/server.rb:443:in `process_client'
+puma (5.6.5) lib/puma/thread_pool.rb:147:in `block in spawn_thread'
+Started GET "/users/auth/facebook" for ::1 at 2022-12-01 18:13:27 +0000
+  
+AbstractController::ActionNotFound (The action 'passthru' could not be found for OmniauthController):
+  
+actionpack (7.0.4) lib/abstract_controller/base.rb:146:in `process'
+actionview (7.0.4) lib/action_view/rendering.rb:39:in `process'
+actionpack (7.0.4) lib/action_controller/metal.rb:188:in `dispatch'
+actionpack (7.0.4) lib/action_controller/metal.rb:251:in `dispatch'
+actionpack (7.0.4) lib/action_dispatch/routing/route_set.rb:49:in `dispatch'
+actionpack (7.0.4) lib/action_dispatch/routing/route_set.rb:32:in `serve'
+actionpack (7.0.4) lib/action_dispatch/routing/mapper.rb:18:in `block in <class:Constraints>'
+actionpack (7.0.4) lib/action_dispatch/routing/mapper.rb:48:in `serve'
+actionpack (7.0.4) lib/action_dispatch/journey/router.rb:50:in `block in serve'
+actionpack (7.0.4) lib/action_dispatch/journey/router.rb:32:in `each'
+actionpack (7.0.4) lib/action_dispatch/journey/router.rb:32:in `serve'
+actionpack (7.0.4) lib/action_dispatch/routing/route_set.rb:852:in `call'
+omniauth (2.1.0) lib/omniauth/strategy.rb:202:in `call!'
+omniauth (2.1.0) lib/omniauth/strategy.rb:169:in `call'
+omniauth (2.1.0) lib/omniauth/strategy.rb:202:in `call!'
+omniauth (2.1.0) lib/omniauth/strategy.rb:169:in `call'
+warden (1.2.9) lib/warden/manager.rb:36:in `block in call'
+warden (1.2.9) lib/warden/manager.rb:34:in `catch'
+warden (1.2.9) lib/warden/manager.rb:34:in `call'
+rack (2.2.4) lib/rack/tempfile_reaper.rb:15:in `call'
+rack (2.2.4) lib/rack/etag.rb:27:in `call'
+rack (2.2.4) lib/rack/conditional_get.rb:27:in `call'
+rack (2.2.4) lib/rack/head.rb:12:in `call'
+actionpack (7.0.4) lib/action_dispatch/http/permissions_policy.rb:38:in `call'
+actionpack (7.0.4) lib/action_dispatch/http/content_security_policy.rb:36:in `call'
+rack (2.2.4) lib/rack/session/abstract/id.rb:266:in `context'
+rack (2.2.4) lib/rack/session/abstract/id.rb:260:in `call'
+actionpack (7.0.4) lib/action_dispatch/middleware/cookies.rb:696:in `call'
+activerecord (7.0.4) lib/active_record/migration.rb:603:in `call'
+actionpack (7.0.4) lib/action_dispatch/middleware/callbacks.rb:27:in `block in call'
+activesupport (7.0.4) lib/active_support/callbacks.rb:99:in `run_callbacks'
+actionpack (7.0.4) lib/action_dispatch/middleware/callbacks.rb:26:in `call'
+actionpack (7.0.4) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (7.0.4) lib/action_dispatch/middleware/actionable_exceptions.rb:17:in `call'
+actionpack (7.0.4) lib/action_dispatch/middleware/debug_exceptions.rb:28:in `call'
+web-console (4.2.0) lib/web_console/middleware.rb:132:in `call_app'
+web-console (4.2.0) lib/web_console/middleware.rb:28:in `block in call'
+web-console (4.2.0) lib/web_console/middleware.rb:17:in `catch'
+web-console (4.2.0) lib/web_console/middleware.rb:17:in `call'
+actionpack (7.0.4) lib/action_dispatch/middleware/show_exceptions.rb:26:in `call'
+railties (7.0.4) lib/rails/rack/logger.rb:40:in `call_app'
+railties (7.0.4) lib/rails/rack/logger.rb:25:in `block in call'
+activesupport (7.0.4) lib/active_support/tagged_logging.rb:99:in `block in tagged'
+activesupport (7.0.4) lib/active_support/tagged_logging.rb:37:in `tagged'
+activesupport (7.0.4) lib/active_support/tagged_logging.rb:99:in `tagged'
+railties (7.0.4) lib/rails/rack/logger.rb:25:in `call'
+sprockets-rails (3.4.2) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (7.0.4) lib/action_dispatch/middleware/remote_ip.rb:93:in `call'
+actionpack (7.0.4) lib/action_dispatch/middleware/request_id.rb:26:in `call'
+rack (2.2.4) lib/rack/method_override.rb:24:in `call'
+rack (2.2.4) lib/rack/runtime.rb:22:in `call'
+activesupport (7.0.4) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (7.0.4) lib/action_dispatch/middleware/server_timing.rb:61:in `block in call'
+actionpack (7.0.4) lib/action_dispatch/middleware/server_timing.rb:26:in `collect_events'
+actionpack (7.0.4) lib/action_dispatch/middleware/server_timing.rb:60:in `call'
+actionpack (7.0.4) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (7.0.4) lib/action_dispatch/middleware/static.rb:23:in `call'
+rack (2.2.4) lib/rack/sendfile.rb:110:in `call'
+actionpack (7.0.4) lib/action_dispatch/middleware/host_authorization.rb:137:in `call'
+railties (7.0.4) lib/rails/engine.rb:530:in `call'
+puma (5.6.5) lib/puma/configuration.rb:252:in `call'
+puma (5.6.5) lib/puma/request.rb:77:in `block in handle_request'
+puma (5.6.5) lib/puma/thread_pool.rb:340:in `with_force_shutdown'
+puma (5.6.5) lib/puma/request.rb:76:in `handle_request'
+puma (5.6.5) lib/puma/server.rb:443:in `process_client'
+puma (5.6.5) lib/puma/thread_pool.rb:147:in `block in spawn_thread'
+Started GET "/users/auth/facebook" for ::1 at 2022-12-01 18:13:31 +0000
+  
+AbstractController::ActionNotFound (The action 'passthru' could not be found for OmniauthController):
+  
+actionpack (7.0.4) lib/abstract_controller/base.rb:146:in `process'
+actionview (7.0.4) lib/action_view/rendering.rb:39:in `process'
+actionpack (7.0.4) lib/action_controller/metal.rb:188:in `dispatch'
+actionpack (7.0.4) lib/action_controller/metal.rb:251:in `dispatch'
+actionpack (7.0.4) lib/action_dispatch/routing/route_set.rb:49:in `dispatch'
+actionpack (7.0.4) lib/action_dispatch/routing/route_set.rb:32:in `serve'
+actionpack (7.0.4) lib/action_dispatch/routing/mapper.rb:18:in `block in <class:Constraints>'
+actionpack (7.0.4) lib/action_dispatch/routing/mapper.rb:48:in `serve'
+actionpack (7.0.4) lib/action_dispatch/journey/router.rb:50:in `block in serve'
+actionpack (7.0.4) lib/action_dispatch/journey/router.rb:32:in `each'
+actionpack (7.0.4) lib/action_dispatch/journey/router.rb:32:in `serve'
+actionpack (7.0.4) lib/action_dispatch/routing/route_set.rb:852:in `call'
+omniauth (2.1.0) lib/omniauth/strategy.rb:202:in `call!'
+omniauth (2.1.0) lib/omniauth/strategy.rb:169:in `call'
+omniauth (2.1.0) lib/omniauth/strategy.rb:202:in `call!'
+omniauth (2.1.0) lib/omniauth/strategy.rb:169:in `call'
+warden (1.2.9) lib/warden/manager.rb:36:in `block in call'
+warden (1.2.9) lib/warden/manager.rb:34:in `catch'
+warden (1.2.9) lib/warden/manager.rb:34:in `call'
+rack (2.2.4) lib/rack/tempfile_reaper.rb:15:in `call'
+rack (2.2.4) lib/rack/etag.rb:27:in `call'
+rack (2.2.4) lib/rack/conditional_get.rb:27:in `call'
+rack (2.2.4) lib/rack/head.rb:12:in `call'
+actionpack (7.0.4) lib/action_dispatch/http/permissions_policy.rb:38:in `call'
+actionpack (7.0.4) lib/action_dispatch/http/content_security_policy.rb:36:in `call'
+rack (2.2.4) lib/rack/session/abstract/id.rb:266:in `context'
+rack (2.2.4) lib/rack/session/abstract/id.rb:260:in `call'
+actionpack (7.0.4) lib/action_dispatch/middleware/cookies.rb:696:in `call'
+activerecord (7.0.4) lib/active_record/migration.rb:603:in `call'
+actionpack (7.0.4) lib/action_dispatch/middleware/callbacks.rb:27:in `block in call'
+activesupport (7.0.4) lib/active_support/callbacks.rb:99:in `run_callbacks'
+actionpack (7.0.4) lib/action_dispatch/middleware/callbacks.rb:26:in `call'
+actionpack (7.0.4) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (7.0.4) lib/action_dispatch/middleware/actionable_exceptions.rb:17:in `call'
+actionpack (7.0.4) lib/action_dispatch/middleware/debug_exceptions.rb:28:in `call'
+web-console (4.2.0) lib/web_console/middleware.rb:132:in `call_app'
+web-console (4.2.0) lib/web_console/middleware.rb:28:in `block in call'
+web-console (4.2.0) lib/web_console/middleware.rb:17:in `catch'
+web-console (4.2.0) lib/web_console/middleware.rb:17:in `call'
+actionpack (7.0.4) lib/action_dispatch/middleware/show_exceptions.rb:26:in `call'
+railties (7.0.4) lib/rails/rack/logger.rb:40:in `call_app'
+railties (7.0.4) lib/rails/rack/logger.rb:25:in `block in call'
+activesupport (7.0.4) lib/active_support/tagged_logging.rb:99:in `block in tagged'
+activesupport (7.0.4) lib/active_support/tagged_logging.rb:37:in `tagged'
+activesupport (7.0.4) lib/active_support/tagged_logging.rb:99:in `tagged'
+railties (7.0.4) lib/rails/rack/logger.rb:25:in `call'
+sprockets-rails (3.4.2) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (7.0.4) lib/action_dispatch/middleware/remote_ip.rb:93:in `call'
+actionpack (7.0.4) lib/action_dispatch/middleware/request_id.rb:26:in `call'
+rack (2.2.4) lib/rack/method_override.rb:24:in `call'
+rack (2.2.4) lib/rack/runtime.rb:22:in `call'
+activesupport (7.0.4) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (7.0.4) lib/action_dispatch/middleware/server_timing.rb:61:in `block in call'
+actionpack (7.0.4) lib/action_dispatch/middleware/server_timing.rb:26:in `collect_events'
+actionpack (7.0.4) lib/action_dispatch/middleware/server_timing.rb:60:in `call'
+actionpack (7.0.4) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (7.0.4) lib/action_dispatch/middleware/static.rb:23:in `call'
+rack (2.2.4) lib/rack/sendfile.rb:110:in `call'
+actionpack (7.0.4) lib/action_dispatch/middleware/host_authorization.rb:137:in `call'
+railties (7.0.4) lib/rails/engine.rb:530:in `call'
+puma (5.6.5) lib/puma/configuration.rb:252:in `call'
+puma (5.6.5) lib/puma/request.rb:77:in `block in handle_request'
+puma (5.6.5) lib/puma/thread_pool.rb:340:in `with_force_shutdown'
+puma (5.6.5) lib/puma/request.rb:76:in `handle_request'
+puma (5.6.5) lib/puma/server.rb:443:in `process_client'
+puma (5.6.5) lib/puma/thread_pool.rb:147:in `block in spawn_thread'
+Started GET "/" for ::1 at 2022-12-02 07:50:35 +0000
+Processing by Rails::WelcomeController#index as HTML
+  Rendering /Users/ZyadAkkari/.rbenv/versions/3.1.2/lib/ruby/gems/3.1.0/gems/railties-7.0.4/lib/rails/templates/rails/welcome/index.html.erb
+  Rendered /Users/ZyadAkkari/.rbenv/versions/3.1.2/lib/ruby/gems/3.1.0/gems/railties-7.0.4/lib/rails/templates/rails/welcome/index.html.erb (Duration: 92.2ms | Allocations: 296)
+Completed 200 OK in 421ms (Views: 278.1ms | Allocations: 922)
+
+
+Started GET "/" for ::1 at 2022-12-02 07:50:54 +0000
+  [1m[36mActiveRecord::SchemaMigration Pluck (2.5ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by Rails::WelcomeController#index as HTML
+  Rendering /Users/ZyadAkkari/.rbenv/versions/3.1.2/lib/ruby/gems/3.1.0/gems/railties-7.0.4/lib/rails/templates/rails/welcome/index.html.erb
+  Rendered /Users/ZyadAkkari/.rbenv/versions/3.1.2/lib/ruby/gems/3.1.0/gems/railties-7.0.4/lib/rails/templates/rails/welcome/index.html.erb (Duration: 2.0ms | Allocations: 524)
+Completed 200 OK in 31ms (Views: 8.5ms | ActiveRecord: 0.0ms | Allocations: 3858)
+
+
+Started GET "/users/sign_up" for ::1 at 2022-12-02 07:51:01 +0000
+Processing by Devise::RegistrationsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering devise/registrations/new.html.erb within layouts/application
+  Rendered devise/shared/_links.html.erb (Duration: 2.4ms | Allocations: 1163)
+  Rendered devise/registrations/new.html.erb within layouts/application (Duration: 569.7ms | Allocations: 307988)
+  Rendered layout layouts/application.html.erb (Duration: 658.4ms | Allocations: 334795)
+Completed 200 OK in 885ms (Views: 661.4ms | ActiveRecord: 151.9ms | Allocations: 348737)
+
+
+Started POST "/users/auth/facebook" for ::1 at 2022-12-02 07:51:07 +0000
+Started GET "/" for ::1 at 2022-12-02 07:51:42 +0000
+Processing by Rails::WelcomeController#index as HTML
+  Rendering /Users/ZyadAkkari/.rbenv/versions/3.1.2/lib/ruby/gems/3.1.0/gems/railties-7.0.4/lib/rails/templates/rails/welcome/index.html.erb
+  Rendered /Users/ZyadAkkari/.rbenv/versions/3.1.2/lib/ruby/gems/3.1.0/gems/railties-7.0.4/lib/rails/templates/rails/welcome/index.html.erb (Duration: 1.4ms | Allocations: 296)
+Completed 200 OK in 7ms (Views: 5.0ms | ActiveRecord: 0.0ms | Allocations: 1011)
+
+
+Started GET "/users/sign_up" for ::1 at 2022-12-02 07:52:05 +0000
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.8ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by Devise::RegistrationsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering devise/registrations/new.html.erb within layouts/application
+  Rendered devise/shared/_links.html.erb (Duration: 2.7ms | Allocations: 918)
+  Rendered devise/registrations/new.html.erb within layouts/application (Duration: 485.1ms | Allocations: 307738)
+  Rendered layout layouts/application.html.erb (Duration: 589.2ms | Allocations: 333985)
+Completed 200 OK in 673ms (Views: 599.9ms | ActiveRecord: 41.3ms | Allocations: 350402)
+
+
+Started GET "/users/auth/facebook" for ::1 at 2022-12-02 07:52:07 +0000
+  
+AbstractController::ActionNotFound (The action 'passthru' could not be found for OmniauthController):
+  
+actionpack (7.0.4) lib/abstract_controller/base.rb:146:in `process'
+actionview (7.0.4) lib/action_view/rendering.rb:39:in `process'
+actionpack (7.0.4) lib/action_controller/metal.rb:188:in `dispatch'
+actionpack (7.0.4) lib/action_controller/metal.rb:251:in `dispatch'
+actionpack (7.0.4) lib/action_dispatch/routing/route_set.rb:49:in `dispatch'
+actionpack (7.0.4) lib/action_dispatch/routing/route_set.rb:32:in `serve'
+actionpack (7.0.4) lib/action_dispatch/routing/mapper.rb:18:in `block in <class:Constraints>'
+actionpack (7.0.4) lib/action_dispatch/routing/mapper.rb:48:in `serve'
+actionpack (7.0.4) lib/action_dispatch/journey/router.rb:50:in `block in serve'
+actionpack (7.0.4) lib/action_dispatch/journey/router.rb:32:in `each'
+actionpack (7.0.4) lib/action_dispatch/journey/router.rb:32:in `serve'
+actionpack (7.0.4) lib/action_dispatch/routing/route_set.rb:852:in `call'
+omniauth (2.1.0) lib/omniauth/strategy.rb:202:in `call!'
+omniauth (2.1.0) lib/omniauth/strategy.rb:169:in `call'
+omniauth (2.1.0) lib/omniauth/strategy.rb:202:in `call!'
+omniauth (2.1.0) lib/omniauth/strategy.rb:169:in `call'
+warden (1.2.9) lib/warden/manager.rb:36:in `block in call'
+warden (1.2.9) lib/warden/manager.rb:34:in `catch'
+warden (1.2.9) lib/warden/manager.rb:34:in `call'
+rack (2.2.4) lib/rack/tempfile_reaper.rb:15:in `call'
+rack (2.2.4) lib/rack/etag.rb:27:in `call'
+rack (2.2.4) lib/rack/conditional_get.rb:27:in `call'
+rack (2.2.4) lib/rack/head.rb:12:in `call'
+actionpack (7.0.4) lib/action_dispatch/http/permissions_policy.rb:38:in `call'
+actionpack (7.0.4) lib/action_dispatch/http/content_security_policy.rb:36:in `call'
+rack (2.2.4) lib/rack/session/abstract/id.rb:266:in `context'
+rack (2.2.4) lib/rack/session/abstract/id.rb:260:in `call'
+actionpack (7.0.4) lib/action_dispatch/middleware/cookies.rb:696:in `call'
+activerecord (7.0.4) lib/active_record/migration.rb:603:in `call'
+actionpack (7.0.4) lib/action_dispatch/middleware/callbacks.rb:27:in `block in call'
+activesupport (7.0.4) lib/active_support/callbacks.rb:99:in `run_callbacks'
+actionpack (7.0.4) lib/action_dispatch/middleware/callbacks.rb:26:in `call'
+actionpack (7.0.4) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (7.0.4) lib/action_dispatch/middleware/actionable_exceptions.rb:17:in `call'
+actionpack (7.0.4) lib/action_dispatch/middleware/debug_exceptions.rb:28:in `call'
+web-console (4.2.0) lib/web_console/middleware.rb:132:in `call_app'
+web-console (4.2.0) lib/web_console/middleware.rb:28:in `block in call'
+web-console (4.2.0) lib/web_console/middleware.rb:17:in `catch'
+web-console (4.2.0) lib/web_console/middleware.rb:17:in `call'
+actionpack (7.0.4) lib/action_dispatch/middleware/show_exceptions.rb:26:in `call'
+railties (7.0.4) lib/rails/rack/logger.rb:40:in `call_app'
+railties (7.0.4) lib/rails/rack/logger.rb:25:in `block in call'
+activesupport (7.0.4) lib/active_support/tagged_logging.rb:99:in `block in tagged'
+activesupport (7.0.4) lib/active_support/tagged_logging.rb:37:in `tagged'
+activesupport (7.0.4) lib/active_support/tagged_logging.rb:99:in `tagged'
+railties (7.0.4) lib/rails/rack/logger.rb:25:in `call'
+sprockets-rails (3.4.2) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (7.0.4) lib/action_dispatch/middleware/remote_ip.rb:93:in `call'
+actionpack (7.0.4) lib/action_dispatch/middleware/request_id.rb:26:in `call'
+rack (2.2.4) lib/rack/method_override.rb:24:in `call'
+rack (2.2.4) lib/rack/runtime.rb:22:in `call'
+activesupport (7.0.4) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (7.0.4) lib/action_dispatch/middleware/server_timing.rb:61:in `block in call'
+actionpack (7.0.4) lib/action_dispatch/middleware/server_timing.rb:26:in `collect_events'
+actionpack (7.0.4) lib/action_dispatch/middleware/server_timing.rb:60:in `call'
+actionpack (7.0.4) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (7.0.4) lib/action_dispatch/middleware/static.rb:23:in `call'
+rack (2.2.4) lib/rack/sendfile.rb:110:in `call'
+actionpack (7.0.4) lib/action_dispatch/middleware/host_authorization.rb:137:in `call'
+railties (7.0.4) lib/rails/engine.rb:530:in `call'
+puma (5.6.5) lib/puma/configuration.rb:252:in `call'
+puma (5.6.5) lib/puma/request.rb:77:in `block in handle_request'
+puma (5.6.5) lib/puma/thread_pool.rb:340:in `with_force_shutdown'
+puma (5.6.5) lib/puma/request.rb:76:in `handle_request'
+puma (5.6.5) lib/puma/server.rb:443:in `process_client'
+puma (5.6.5) lib/puma/thread_pool.rb:147:in `block in spawn_thread'
+Started GET "/users/sign_up" for ::1 at 2022-12-02 07:53:32 +0000
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.7ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by Devise::RegistrationsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering devise/registrations/new.html.erb within layouts/application
+  Rendered devise/shared/_links.html.erb (Duration: 2.6ms | Allocations: 1166)
+  Rendered devise/registrations/new.html.erb within layouts/application (Duration: 489.7ms | Allocations: 307939)
+  Rendered layout layouts/application.html.erb (Duration: 593.1ms | Allocations: 334581)
+Completed 200 OK in 645ms (Views: 602.7ms | ActiveRecord: 8.6ms | Allocations: 350998)
+
+
+Started POST "/users/auth/facebook" for ::1 at 2022-12-02 07:53:35 +0000
+Started POST "/users/auth/github" for ::1 at 2022-12-02 07:53:39 +0000
+Started POST "/users" for ::1 at 2022-12-02 07:54:06 +0000
+Processing by Devise::RegistrationsController#create as HTML
+  Parameters: {"authenticity_token"=>"[FILTERED]", "user"=>{"name"=>"Zyad", "email"=>"akkarizyad@gmail.com", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]"}, "commit"=>"Sign up"}
+[31mUnpermitted parameter: :name. Context: { controller: Devise::RegistrationsController, action: create, request: #<ActionDispatch::Request:0x000000010ea2ec48>, params: {"authenticity_token"=>"[FILTERED]", "user"=>{"name"=>"Zyad", "email"=>"akkarizyad@gmail.com", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]"}, "commit"=>"Sign up", "controller"=>"devise/registrations", "action"=>"create"} }[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mUser Exists? (173.0ms)[0m  [1m[34mSELECT 1 AS one FROM "users" WHERE "users"."email" = $1 LIMIT $2[0m  [["email", "akkarizyad@gmail.com"], ["LIMIT", 1]]
+  [1m[36mUser Create (88.2ms)[0m  [1m[32mINSERT INTO "users" ("email", "encrypted_password", "reset_password_token", "reset_password_sent_at", "remember_created_at", "created_at", "updated_at", "name", "provider", "uid") VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9, $10) RETURNING "id"[0m  [["email", "akkarizyad@gmail.com"], ["encrypted_password", "[FILTERED]"], ["reset_password_token", "[FILTERED]"], ["reset_password_sent_at", "[FILTERED]"], ["remember_created_at", nil], ["created_at", "2022-12-02 07:54:07.754987"], ["updated_at", "2022-12-02 07:54:07.754987"], ["name", nil], ["provider", ""], ["uid", ""]]
+  [1m[36mTRANSACTION (0.6ms)[0m  [1m[35mCOMMIT[0m
+Redirected to http://localhost:3000/
+Completed 302 Found in 1014ms (ActiveRecord: 262.9ms | Allocations: 14437)
+
+
+Started GET "/" for ::1 at 2022-12-02 07:54:08 +0000
+Processing by Rails::WelcomeController#index as HTML
+  Rendering /Users/ZyadAkkari/.rbenv/versions/3.1.2/lib/ruby/gems/3.1.0/gems/railties-7.0.4/lib/rails/templates/rails/welcome/index.html.erb
+  Rendered /Users/ZyadAkkari/.rbenv/versions/3.1.2/lib/ruby/gems/3.1.0/gems/railties-7.0.4/lib/rails/templates/rails/welcome/index.html.erb (Duration: 1.5ms | Allocations: 300)
+Completed 200 OK in 7ms (Views: 3.9ms | ActiveRecord: 0.0ms | Allocations: 1117)
+
+
+Started GET "/posts/new" for ::1 at 2022-12-02 07:54:57 +0000
+Processing by PostsController#new as HTML
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  Rendering layout layouts/application.html.erb
+  Rendering posts/new.html.erb within layouts/application
+  Rendered posts/_form.html.erb (Duration: 1.9ms | Allocations: 906)
+  Rendered posts/new.html.erb within layouts/application (Duration: 3.8ms | Allocations: 1245)
+  Rendered layout layouts/application.html.erb (Duration: 12.0ms | Allocations: 4848)
+Completed 200 OK in 52ms (Views: 15.3ms | ActiveRecord: 3.4ms | Allocations: 12404)
+
+
+Started POST "/posts" for ::1 at 2022-12-02 07:55:00 +0000
+Processing by PostsController#create as HTML
+  Parameters: {"authenticity_token"=>"[FILTERED]", "commit"=>"Create Post"}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  Rendering layout layouts/application.html.erb
+  Rendering posts/new.html.erb within layouts/application
+  Rendered posts/_form.html.erb (Duration: 1.9ms | Allocations: 647)
+  Rendered posts/new.html.erb within layouts/application (Duration: 2.4ms | Allocations: 745)
+  Rendered layout layouts/application.html.erb (Duration: 8.6ms | Allocations: 4085)
+Completed 422 Unprocessable Entity in 29ms (Views: 11.6ms | ActiveRecord: 1.2ms | Allocations: 8123)
+
+
+Started POST "/posts" for ::1 at 2022-12-02 08:00:18 +0000
+Processing by PostsController#create as HTML
+  Parameters: {"authenticity_token"=>"[FILTERED]", "commit"=>"Create Post"}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  Rendering layout layouts/application.html.erb
+  Rendering posts/new.html.erb within layouts/application
+  Rendered posts/_form.html.erb (Duration: 50.9ms | Allocations: 15512)
+  Rendered posts/new.html.erb within layouts/application (Duration: 52.5ms | Allocations: 15849)
+  Rendered layout layouts/application.html.erb (Duration: 65.2ms | Allocations: 19473)
+Completed 422 Unprocessable Entity in 383ms (Views: 68.4ms | ActiveRecord: 161.8ms | Allocations: 22738)
+
+
+Started POST "/posts" for ::1 at 2022-12-02 08:00:48 +0000
+Processing by PostsController#create as HTML
+  Parameters: {"authenticity_token"=>"[FILTERED]", "commit"=>"Create Post"}
+  [1m[36mUser Load (1.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  Rendering layout layouts/application.html.erb
+  Rendering posts/new.html.erb within layouts/application
+  Rendered posts/_form.html.erb (Duration: 15.3ms | Allocations: 7413)
+  Rendered posts/new.html.erb within layouts/application (Duration: 17.0ms | Allocations: 7737)
+  Rendered layout layouts/application.html.erb (Duration: 28.4ms | Allocations: 11324)
+Completed 422 Unprocessable Entity in 43ms (Views: 31.7ms | ActiveRecord: 1.3ms | Allocations: 14616)
+
+
+Started GET "/" for ::1 at 2022-12-02 08:00:56 +0000
+Processing by Rails::WelcomeController#index as HTML
+  Rendering /Users/ZyadAkkari/.rbenv/versions/3.1.2/lib/ruby/gems/3.1.0/gems/railties-7.0.4/lib/rails/templates/rails/welcome/index.html.erb
+  Rendered /Users/ZyadAkkari/.rbenv/versions/3.1.2/lib/ruby/gems/3.1.0/gems/railties-7.0.4/lib/rails/templates/rails/welcome/index.html.erb (Duration: 2.1ms | Allocations: 296)
+Completed 200 OK in 5ms (Views: 3.4ms | ActiveRecord: 0.0ms | Allocations: 910)
+
+
+Started GET "/" for ::1 at 2022-12-02 08:02:25 +0000
+Processing by PostsController#index as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  Rendering layout layouts/application.html.erb
+  Rendering posts/index.html.erb within layouts/application
+  [1m[36mPost Load (41.1ms)[0m  [1m[34mSELECT "posts".* FROM "posts"[0m
+  ↳ app/views/posts/index.html.erb:6
+  Rendered posts/index.html.erb within layouts/application (Duration: 44.1ms | Allocations: 1069)
+  Rendered layout layouts/application.html.erb (Duration: 50.6ms | Allocations: 4503)
+Completed 200 OK in 124ms (Views: 11.3ms | ActiveRecord: 87.3ms | Allocations: 12694)
+
+
+Started GET "/" for ::1 at 2022-12-02 08:06:50 +0000
+Processing by PostsController#index as HTML
+  [1m[36mUser Load (40.4ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  Rendering layout layouts/application.html.erb
+  Rendering posts/index.html.erb within layouts/application
+  Rendered posts/_form.html.erb (Duration: 6.3ms | Allocations: 2170)
+  Rendered posts/index.html.erb within layouts/application (Duration: 7.8ms | Allocations: 2578)
+  Rendered layout layouts/application.html.erb (Duration: 8.0ms | Allocations: 2663)
+Completed 500 Internal Server Error in 58ms (ActiveRecord: 40.5ms | Allocations: 5288)
+
+
+  
+ActionView::Template::Error (undefined method `model_name' for nil:NilClass
+
+      convert_to_model(record_or_class).model_name
+                                       ^^^^^^^^^^^):
+    1: 
+    2: <%= simple_form_for(@post) do |f| %>
+    3:   <%= f.error_notification %>
+    4:   <%= f.error_notification message: f.object.errors[:base].to_sentence if f.object.errors[:base].present? %>
+    5: 
+  
+app/views/posts/_form.html.erb:2
+app/views/posts/index.html.erb:2
+Started GET "/" for ::1 at 2022-12-02 08:09:14 +0000
+Processing by PostsController#index as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  Rendering layout layouts/application.html.erb
+  Rendering posts/index.html.erb within layouts/application
+  [1m[36mPost Load (0.3ms)[0m  [1m[34mSELECT "posts".* FROM "posts"[0m
+  ↳ app/views/posts/index.html.erb:5
+  Rendered posts/index.html.erb within layouts/application (Duration: 4.4ms | Allocations: 991)
+  Rendered layout layouts/application.html.erb (Duration: 13.8ms | Allocations: 4619)
+Completed 200 OK in 22ms (Views: 16.3ms | ActiveRecord: 0.7ms | Allocations: 7359)
+
+
+Started GET "/users/sign_up" for ::1 at 2022-12-02 08:16:54 +0000
+Processing by Devise::RegistrationsController#new as HTML
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+Redirected to http://localhost:3000/
+Filter chain halted as :require_no_authentication rendered or redirected
+Completed 302 Found in 113ms (ActiveRecord: 19.2ms | Allocations: 5439)
+
+
+Started GET "/" for ::1 at 2022-12-02 08:16:54 +0000
+Processing by PostsController#index as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  Rendering layout layouts/application.html.erb
+  Rendering posts/index.html.erb within layouts/application
+  [1m[36mPost Load (0.6ms)[0m  [1m[34mSELECT "posts".* FROM "posts"[0m
+  ↳ app/views/posts/index.html.erb:5
+  Rendered posts/index.html.erb within layouts/application (Duration: 4.9ms | Allocations: 991)
+  Rendered layout layouts/application.html.erb (Duration: 30.3ms | Allocations: 4604)
+Completed 200 OK in 256ms (Views: 241.9ms | ActiveRecord: 1.5ms | Allocations: 7218)
+
+
+Started GET "/" for ::1 at 2022-12-02 08:17:14 +0000
+  [1m[36mActiveRecord::SchemaMigration Pluck (2.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by PostsController#index as HTML
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  Rendering layout layouts/application.html.erb
+  Rendering posts/index.html.erb within layouts/application
+  [1m[36mPost Load (0.5ms)[0m  [1m[34mSELECT "posts".* FROM "posts"[0m
+  ↳ app/views/posts/index.html.erb:5
+  Rendered posts/index.html.erb within layouts/application (Duration: 3.7ms | Allocations: 1387)
+  Rendered layout layouts/application.html.erb (Duration: 117.1ms | Allocations: 27584)
+Completed 200 OK in 179ms (Views: 121.3ms | ActiveRecord: 11.3ms | Allocations: 47931)
+
+
+Started GET "/" for ::1 at 2022-12-02 08:18:15 +0000
+Processing by PostsController#index as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  Rendering layout layouts/application.html.erb
+  Rendering posts/index.html.erb within layouts/application
+  [1m[36mPost Load (0.3ms)[0m  [1m[34mSELECT "posts".* FROM "posts"[0m
+  ↳ app/views/posts/index.html.erb:5
+  Rendered posts/index.html.erb within layouts/application (Duration: 2.5ms | Allocations: 1067)
+  Rendered layout layouts/application.html.erb (Duration: 10.9ms | Allocations: 4724)
+Completed 200 OK in 32ms (Views: 13.1ms | ActiveRecord: 1.0ms | Allocations: 7537)
+
+
+Started GET "/users/sign_out" for ::1 at 2022-12-02 08:18:18 +0000
+  
+ActionController::RoutingError (No route matches [GET] "/users/sign_out"):
+  
+Started GET "/users/sign_out" for ::1 at 2022-12-02 08:20:31 +0000
+  [1m[36mActiveRecord::SchemaMigration Pluck (1.0ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by Devise::SessionsController#destroy as HTML
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+Redirected to http://localhost:3000/
+Completed 302 Found in 890ms (ActiveRecord: 64.1ms | Allocations: 295990)
+
+
+Started GET "/" for ::1 at 2022-12-02 08:20:33 +0000
+Processing by PostsController#index as HTML
+Completed 401 Unauthorized in 5ms (ActiveRecord: 0.2ms | Allocations: 1038)
+
+
+Started GET "/users/sign_in" for ::1 at 2022-12-02 08:20:33 +0000
+Processing by Devise::SessionsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering devise/sessions/new.html.erb within layouts/application
+  Rendered devise/shared/_links.html.erb (Duration: 3.6ms | Allocations: 1265)
+  Rendered devise/sessions/new.html.erb within layouts/application (Duration: 72.2ms | Allocations: 30301)
+  Rendered layout layouts/application.html.erb (Duration: 170.5ms | Allocations: 56452)
+Completed 200 OK in 200ms (Views: 196.0ms | ActiveRecord: 0.3ms | Allocations: 59658)
+
+
+Started GET "/users/sign_up" for ::1 at 2022-12-02 08:20:40 +0000
+Processing by Devise::RegistrationsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering devise/registrations/new.html.erb within layouts/application
+  Rendered devise/shared/_links.html.erb (Duration: 2.5ms | Allocations: 590)
+  Rendered devise/registrations/new.html.erb within layouts/application (Duration: 45.1ms | Allocations: 23071)
+  Rendered layout layouts/application.html.erb (Duration: 59.1ms | Allocations: 26478)
+Completed 200 OK in 68ms (Views: 63.3ms | ActiveRecord: 0.3ms | Allocations: 28272)
+
+
+Started GET "/users/sign_up" for ::1 at 2022-12-02 08:22:19 +0000
+Processing by Devise::RegistrationsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering devise/registrations/new.html.erb within layouts/application
+  Rendered devise/shared/_links.html.erb (Duration: 3.5ms | Allocations: 911)
+  Rendered devise/registrations/new.html.erb within layouts/application (Duration: 31.3ms | Allocations: 22908)
+  Rendered layout layouts/application.html.erb (Duration: 39.3ms | Allocations: 26505)
+Completed 200 OK in 45ms (Views: 42.4ms | ActiveRecord: 0.2ms | Allocations: 28202)
+
+
+Started GET "/users/sign_up" for ::1 at 2022-12-02 08:22:35 +0000
+Processing by Devise::RegistrationsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering devise/registrations/new.html.erb within layouts/application
+  Rendered devise/shared/_links.html.erb (Duration: 1.0ms | Allocations: 481)
+  Rendered devise/registrations/new.html.erb within layouts/application (Duration: 32.6ms | Allocations: 21819)
+  Rendered layout layouts/application.html.erb (Duration: 43.6ms | Allocations: 25065)
+Completed 200 OK in 47ms (Views: 44.3ms | ActiveRecord: 0.2ms | Allocations: 26079)
+
+
+Started GET "/users/sign_up" for ::1 at 2022-12-02 08:22:42 +0000
+Processing by Devise::RegistrationsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering devise/registrations/new.html.erb within layouts/application
+  Rendered devise/shared/_links.html.erb (Duration: 0.8ms | Allocations: 481)
+  Rendered devise/registrations/new.html.erb within layouts/application (Duration: 28.4ms | Allocations: 21816)
+  Rendered layout layouts/application.html.erb (Duration: 36.6ms | Allocations: 25062)
+Completed 200 OK in 41ms (Views: 37.3ms | ActiveRecord: 0.6ms | Allocations: 25985)
+
+
+Started GET "/users/sign_up" for ::1 at 2022-12-02 08:23:01 +0000
+Processing by Devise::RegistrationsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering devise/registrations/new.html.erb within layouts/application
+  Rendered devise/shared/_links.html.erb (Duration: 5.8ms | Allocations: 911)
+  Rendered devise/registrations/new.html.erb within layouts/application (Duration: 49.4ms | Allocations: 22901)
+  Rendered layout layouts/application.html.erb (Duration: 57.2ms | Allocations: 26498)
+Completed 200 OK in 77ms (Views: 68.7ms | ActiveRecord: 0.3ms | Allocations: 28103)
+
+
+Started GET "/users/sign_in" for ::1 at 2022-12-02 08:27:54 +0000
+Processing by Devise::SessionsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering devise/sessions/new.html.erb within layouts/application
+  Rendered devise/shared/_links.html.erb (Duration: 1.0ms | Allocations: 563)
+  Rendered devise/sessions/new.html.erb within layouts/application (Duration: 33.5ms | Allocations: 21613)
+  Rendered layout layouts/application.html.erb (Duration: 43.2ms | Allocations: 25006)
+Completed 200 OK in 67ms (Views: 50.4ms | ActiveRecord: 0.2ms | Allocations: 26496)
+
+
+Started GET "/users/sign_in" for ::1 at 2022-12-02 08:48:50 +0000
+Processing by Devise::SessionsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering devise/sessions/new.html.erb within layouts/application
+  Rendered devise/sessions/new.html.erb within layouts/application (Duration: 86.3ms | Allocations: 8282)
+  Rendered layout layouts/application.html.erb (Duration: 86.9ms | Allocations: 8381)
+Completed 500 Internal Server Error in 1043ms (ActiveRecord: 543.3ms | Allocations: 13143)
+
+
+  
+ActionView::SyntaxErrorInTemplate (Encountered a syntax error while rendering template: check <div class="login-form">
+<%= simple_form_for(resource, as: resource_name, url: session_path(resource_name)) do |f| %>
+  <h2 class="text-center">Sign in</h2>
+  <div class="form-group-login">
+      <div class="input-group-login">
+          <span class="input-group-addon">
+              <i class="fa fa-user"></i>
+          </span>
+
+          <%= f.input :email,
+                required: false,
+                autofocus: true,
+                input_html: { autocomplete: "email" },
+                placeholder: 'Username',
+                label: false,
+                class: 'form-control' %>
+      </div>
+  </div>
+  <div class="form-group-login">
+      <div class="input-group-login">
+          <span class="input-group-addon">
+              <i class="fa fa-lock"></i>
+          </span>
+            <%= f.input :password,
+                    required: false,
+                    input_html: { autocomplete: "current-password" },
+                    placeholder: 'password',
+                    label: false,
+                    class: 'form-control' %>
+      </div>
+  </div>
+  <div class="form-group-login">
+    <%= f.button :submit, "Sign in", class: 'btn btn-primary login-btn btn-block' %>
+  </div>
+  <% end %>
+  <div class="clearfix">
+    <%= f.input :remember_me, as: :boolean if devise_mapping.rememberable?, class: 'pull-left checkbox-inline' %>
+  </div>
+  <div class="or-seperator"><i>or</i></div>
+      <p class="text-center">Log in with your social media account</p>
+          <div class="text-center social-btn">
+              <%= render "devise/shared/links" %>
+          </div>
+
+
+
+
+
+
+
+</div>
+
+):
+1:    <div class="login-form">
+2:    <%= simple_form_for(resource, as: resource_name, url: session_path(resource_name)) do |f| %>
+3:      <h2 class="text-center">Sign in</h2>
+4:      <div class="form-group-login">
+5:          <div class="input-group-login">
+6:              <span class="input-group-addon">
+7:                  <i class="fa fa-user"></i>
+8:              </span>
+9:    
+10:              <%= f.input :email,
+11:                    required: false,
+12:                    autofocus: true,
+13:                    input_html: { autocomplete: "email" },
+14:                    placeholder: 'Username',
+15:                    label: false,
+16:                    class: 'form-control' %>
+17:          </div>
+18:      </div>
+19:      <div class="form-group-login">
+20:          <div class="input-group-login">
+21:              <span class="input-group-addon">
+22:                  <i class="fa fa-lock"></i>
+23:              </span>
+24:                <%= f.input :password,
+25:                        required: false,
+26:                        input_html: { autocomplete: "current-password" },
+27:                        placeholder: 'password',
+28:                        label: false,
+29:                        class: 'form-control' %>
+30:          </div>
+31:      </div>
+32:      <div class="form-group-login">
+33:        <%= f.button :submit, "Sign in", class: 'btn btn-primary login-btn btn-block' %>
+34:      </div>
+35:      <% end %>
+36:      <div class="clearfix">
+37:        <%= f.input :remember_me, as: :boolean if devise_mapping.rememberable?, class: 'pull-left checkbox-inline' %>
+38:      </div>
+39:      <div class="or-seperator"><i>or</i></div>
+40:          <p class="text-center">Log in with your social media account</p>
+41:              <div class="text-center social-btn">
+42:                  <%= render "devise/shared/links" %>
+43:              </div>
+44:    
+45:    
+46:    
+47:    
+48:    
+49:    
+50:    
+51:    </div>
+  
+app/views/devise/sessions/new.html.erb:37: syntax error, unexpected ',', expecting ')'
+app/views/devise/sessions/new.html.erb:37: syntax error, unexpected ',', expecting ')'
+app/views/devise/sessions/new.html.erb:37: syntax error, unexpected ',', expecting ')'
+app/views/devise/sessions/new.html.erb:37: syntax error, unexpected ',', expecting ')'
+app/views/devise/sessions/new.html.erb:37: syntax error, unexpected ',', expecting ')'
+app/views/devise/sessions/new.html.erb:37: syntax error, unexpected ',', expecting ')'
+Started GET "/users/sign_in" for ::1 at 2022-12-02 08:49:36 +0000
+Processing by Devise::SessionsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering devise/sessions/new.html.erb within layouts/application
+  Rendered devise/sessions/new.html.erb within layouts/application (Duration: 165.9ms | Allocations: 19021)
+  Rendered layout layouts/application.html.erb (Duration: 166.4ms | Allocations: 19110)
+Completed 500 Internal Server Error in 174ms (ActiveRecord: 0.3ms | Allocations: 20930)
+
+
+  
+ActionView::Template::Error (undefined local variable or method `f' for #<ActionView::Base:0x00000000010068>
+
+    '.freeze;@output_buffer.append=( f.input :remember_me, as: :boolean if devise_mapping.rememberable? );@output_buffer.safe_append='
+                                     ^):
+    34:   </div>
+    35:   <% end %>
+    36:   <div class="clearfix">
+    37:     <%= f.input :remember_me, as: :boolean if devise_mapping.rememberable? %>
+    38:   </div>
+    39:   <div class="or-seperator"><i>or</i></div>
+    40:       <p class="text-center">Log in with your social media account</p>
+  
+app/views/devise/sessions/new.html.erb:37
+Started GET "/users/sign_in" for ::1 at 2022-12-02 08:50:01 +0000
+Processing by Devise::SessionsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering devise/sessions/new.html.erb within layouts/application
+  Rendered devise/shared/_links.html.erb (Duration: 17.1ms | Allocations: 5907)
+  Rendered devise/sessions/new.html.erb within layouts/application (Duration: 55.1ms | Allocations: 26555)
+  Rendered layout layouts/application.html.erb (Duration: 55.4ms | Allocations: 26640)
+Completed 500 Internal Server Error in 65ms (ActiveRecord: 0.3ms | Allocations: 28448)
+
+
+  
+ActionView::Template::Error (undefined local variable or method `facebook' for #<ActionView::Base:0x000000000103b0>
+
+@output_buffer.safe_append='    '.freeze;@output_buffer.append=( button_to "Sign in with #{OmniAuth::Utils.camelize(facebook)}", omniauth_authorize_path(resource_name, facebook), method: :post );@output_buffer.safe_append='<br />
+                                                                                                                    ^^^^^^^^):
+    20: 
+    21: 
+    22: <%- if devise_mapping.omniauthable? %>
+    23:     <%= button_to "Sign in with #{OmniAuth::Utils.camelize(facebook)}", omniauth_authorize_path(resource_name, facebook), method: :post %><br />
+    24: <% end %>
+  
+app/views/devise/shared/_links.html.erb:23
+app/views/devise/sessions/new.html.erb:43
+Started GET "/users/sign_in" for ::1 at 2022-12-02 08:54:08 +0000
+Processing by Devise::SessionsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering devise/sessions/new.html.erb within layouts/application
+  Rendered devise/shared/_links.html.erb (Duration: 1.4ms | Allocations: 1499)
+  Rendered devise/sessions/new.html.erb within layouts/application (Duration: 25.4ms | Allocations: 22143)
+  Rendered layout layouts/application.html.erb (Duration: 25.6ms | Allocations: 22229)
+Completed 500 Internal Server Error in 32ms (ActiveRecord: 0.4ms | Allocations: 24038)
+
+
+  
+ActionView::SyntaxErrorInTemplate (Encountered a syntax error while rendering template: check <%- if controller_name != 'sessions' %>
+  <%= link_to "Log in", new_session_path(resource_name) %><br />
+<% end %>
+
+<%- if devise_mapping.registerable? && controller_name != 'registrations' %>
+  <%= link_to "Sign up", new_registration_path(resource_name) %><br />
+<% end %>
+
+<%- if devise_mapping.recoverable? && controller_name != 'passwords' && controller_name != 'registrations' %>
+  <%= link_to "Forgot your password?", new_password_path(resource_name) %><br />
+<% end %>
+
+<%- if devise_mapping.confirmable? && controller_name != 'confirmations' %>
+  <%= link_to "Didn't receive confirmation instructions?", new_confirmation_path(resource_name) %><br />
+<% end %>
+
+<%- if devise_mapping.lockable? && resource_class.unlock_strategy_enabled?(:email) && controller_name != 'unlocks' %>
+  <%= link_to "Didn't receive unlock instructions?", new_unlock_path(resource_name) %><br />
+<% end %>
+
+<%- if devise_mapping.omniauthable? %>
+  <%- resource_class.omniauth_providers.each do |provider| %>
+    <% case provider %>
+    <% when :facebook %>
+        <%= button_to "Sign in with #{OmniAuth::Utils.camelize(provider)}", omniauth_authorize_path(resource_name, provider), method: :post %><br />
+    <% when :github %>
+        <%= button_to "Sign in with #{OmniAuth::Utils.camelize(provider)}", omniauth_authorize_path(resource_name, provider), method: :post %><br />
+  <% end %>
+<% end %>
+
+):
+1:    <%- if controller_name != 'sessions' %>
+2:      <%= link_to "Log in", new_session_path(resource_name) %><br />
+3:    <% end %>
+4:    
+5:    <%- if devise_mapping.registerable? && controller_name != 'registrations' %>
+6:      <%= link_to "Sign up", new_registration_path(resource_name) %><br />
+7:    <% end %>
+8:    
+9:    <%- if devise_mapping.recoverable? && controller_name != 'passwords' && controller_name != 'registrations' %>
+10:      <%= link_to "Forgot your password?", new_password_path(resource_name) %><br />
+11:    <% end %>
+12:    
+13:    <%- if devise_mapping.confirmable? && controller_name != 'confirmations' %>
+14:      <%= link_to "Didn't receive confirmation instructions?", new_confirmation_path(resource_name) %><br />
+15:    <% end %>
+16:    
+17:    <%- if devise_mapping.lockable? && resource_class.unlock_strategy_enabled?(:email) && controller_name != 'unlocks' %>
+18:      <%= link_to "Didn't receive unlock instructions?", new_unlock_path(resource_name) %><br />
+19:    <% end %>
+20:    
+21:    <%- if devise_mapping.omniauthable? %>
+22:      <%- resource_class.omniauth_providers.each do |provider| %>
+23:        <% case provider %>
+24:        <% when :facebook %>
+25:            <%= button_to "Sign in with #{OmniAuth::Utils.camelize(provider)}", omniauth_authorize_path(resource_name, provider), method: :post %><br />
+26:        <% when :github %>
+27:            <%= button_to "Sign in with #{OmniAuth::Utils.camelize(provider)}", omniauth_authorize_path(resource_name, provider), method: :post %><br />
+28:      <% end %>
+29:    <% end %>
+  
+app/views/devise/shared/_links.html.erb:31: syntax error, unexpected end-of-input, expecting `end'
+app/views/devise/shared/_links.html.erb:31: syntax error, unexpected end-of-input, expecting `end'
+app/views/devise/shared/_links.html.erb:31: syntax error, unexpected end-of-input, expecting `end'
+app/views/devise/shared/_links.html.erb:31: syntax error, unexpected end-of-input, expecting `end'
+app/views/devise/shared/_links.html.erb:31: syntax error, unexpected end-of-input, expecting `end'
+app/views/devise/shared/_links.html.erb:31: syntax error, unexpected end-of-input, expecting `end'
+app/views/devise/sessions/new.html.erb:43
+Started GET "/users/sign_in" for ::1 at 2022-12-02 08:54:50 +0000
+Processing by Devise::SessionsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering devise/sessions/new.html.erb within layouts/application
+  Rendered devise/shared/_links.html.erb (Duration: 5.5ms | Allocations: 1027)
+  Rendered devise/sessions/new.html.erb within layouts/application (Duration: 32.4ms | Allocations: 21669)
+  Rendered layout layouts/application.html.erb (Duration: 71.6ms | Allocations: 25297)
+Completed 200 OK in 79ms (Views: 74.6ms | ActiveRecord: 0.3ms | Allocations: 27133)
+
+
+Started POST "/users/sign_in" for ::1 at 2022-12-02 08:57:26 +0000
+Processing by Devise::SessionsController#create as HTML
+  Parameters: {"authenticity_token"=>"[FILTERED]", "user"=>{"email"=>"akkarizyad@gmail.com", "password"=>"[FILTERED]", "remember_me"=>"0"}, "commit"=>"Sign in"}
+  [1m[36mUser Load (2.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."email" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["email", "akkarizyad@gmail.com"], ["LIMIT", 1]]
+Redirected to http://localhost:3000/
+Completed 302 Found in 379ms (ActiveRecord: 43.3ms | Allocations: 4492)
+
+
+Started GET "/" for ::1 at 2022-12-02 08:57:27 +0000
+Processing by PostsController#index as HTML
+  [1m[36mUser Load (12.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  Rendering layout layouts/application.html.erb
+  Rendering posts/index.html.erb within layouts/application
+  [1m[36mPost Load (0.7ms)[0m  [1m[34mSELECT "posts".* FROM "posts"[0m
+  ↳ app/views/posts/index.html.erb:5
+  Rendered posts/index.html.erb within layouts/application (Duration: 5.6ms | Allocations: 1148)
+  Rendered layout layouts/application.html.erb (Duration: 17.5ms | Allocations: 4589)
+Completed 200 OK in 82ms (Views: 23.8ms | ActiveRecord: 13.4ms | Allocations: 8882)
+
+
+Started GET "/users/sign_out" for ::1 at 2022-12-02 09:04:14 +0000
+Processing by Devise::SessionsController#destroy as HTML
+  [1m[36mUser Load (2.8ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+Redirected to http://localhost:3000/
+Completed 302 Found in 333ms (ActiveRecord: 96.3ms | Allocations: 6225)
+
+
+Started GET "/" for ::1 at 2022-12-02 09:04:15 +0000
+Processing by PostsController#index as HTML
+Completed 401 Unauthorized in 5ms (ActiveRecord: 0.3ms | Allocations: 665)
+
+
+Started GET "/users/sign_in" for ::1 at 2022-12-02 09:04:15 +0000
+Processing by Devise::SessionsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering devise/sessions/new.html.erb within layouts/application
+  Rendered devise/shared/_links.html.erb (Duration: 3.7ms | Allocations: 541)
+  Rendered devise/sessions/new.html.erb within layouts/application (Duration: 248.0ms | Allocations: 20672)
+  Rendered layout layouts/application.html.erb (Duration: 350.6ms | Allocations: 23953)
+Completed 200 OK in 382ms (Views: 355.8ms | ActiveRecord: 20.6ms | Allocations: 24962)
+
+
+Started POST "/users/auth/facebook" for ::1 at 2022-12-02 09:04:18 +0000
+Started GET "/users/auth/facebook/callback?code=AQD2JHDObvmYFMMff2Eo86jh2kec4aPyf2CAJzMPA733PHRZzc-Lsi_dnDkp1Wnm1Qoj7hz3BLGjF3EafaSm88FsgB5t8kByfriXpN3sSVWt_M4wfJf_QWpuwDECFc3aSqhKctW7SaiypfBwmTrxu1cn9jsaT0Eh-cZfUzpYc16C1hWg-xbKKMTJd21NF4125RNTP5Wir_eYx9btPgHVDHOGqwosm-vGhuvDDSKXWeq_peI7tRyK1kbA0eeoY_BQ668CP7RYn1Jo-nYEuupYcTcyjFjXWLn8iVp_krAOZRKTG_VhbsbRgI82gs24M4l2ZGp8IIl1nXRl06e0vdj6cvGYmlXA5E1SmDDxIHF6KSjnxzGgWZ0eBkU45D8hfTNWbNNjphHhxzpTaWXSq5DhHBoD0ofBJmzUJQm7HUkexes6cg&state=e3666fe37c07917d10a75690ccae89e7ccabb55bab228f3b" for ::1 at 2022-12-02 09:04:33 +0000
+Processing by OmniauthController#facebook as HTML
+  Parameters: {"code"=>"AQD2JHDObvmYFMMff2Eo86jh2kec4aPyf2CAJzMPA733PHRZzc-Lsi_dnDkp1Wnm1Qoj7hz3BLGjF3EafaSm88FsgB5t8kByfriXpN3sSVWt_M4wfJf_QWpuwDECFc3aSqhKctW7SaiypfBwmTrxu1cn9jsaT0Eh-cZfUzpYc16C1hWg-xbKKMTJd21NF4125RNTP5Wir_eYx9btPgHVDHOGqwosm-vGhuvDDSKXWeq_peI7tRyK1kbA0eeoY_BQ668CP7RYn1Jo-nYEuupYcTcyjFjXWLn8iVp_krAOZRKTG_VhbsbRgI82gs24M4l2ZGp8IIl1nXRl06e0vdj6cvGYmlXA5E1SmDDxIHF6KSjnxzGgWZ0eBkU45D8hfTNWbNNjphHhxzpTaWXSq5DhHBoD0ofBJmzUJQm7HUkexes6cg", "state"=>"e3666fe37c07917d10a75690ccae89e7ccabb55bab228f3b"}
+Completed 401 Unauthorized in 2ms (ActiveRecord: 0.0ms | Allocations: 243)
+
+
+Started GET "/users/sign_in" for ::1 at 2022-12-02 09:04:34 +0000
+Processing by Devise::SessionsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering devise/sessions/new.html.erb within layouts/application
+  Rendered devise/shared/_links.html.erb (Duration: 1.5ms | Allocations: 543)
+  Rendered devise/sessions/new.html.erb within layouts/application (Duration: 69.5ms | Allocations: 20682)
+  Rendered layout layouts/application.html.erb (Duration: 82.8ms | Allocations: 24010)
+Completed 200 OK in 88ms (Views: 83.8ms | ActiveRecord: 0.2ms | Allocations: 25084)
+
+
+Started POST "/users/auth/facebook" for ::1 at 2022-12-02 09:04:40 +0000
+Started GET "/users/auth/facebook/callback?code=AQB9sIS7e5AV5Ra8RAyAsJ_iXT-0L60-_r1SL2CPivMnXe9EXm3ns2Qem-3RPROjtOnA6ob_3ikAyPCC-ppUOoBaH2yrOPY0bmtRaXpuN42eE5kipXkJyi951q7n5Wf9f1RuOJRE5RPwnpYy79hKq-7MKNjvyipPSnWrKjbHR8Q9nouqwbR81mnEHyomWJCl-bk8whTig2IfwA9wMtY2R7Hp-Bm8XMPjDc5-lO5iyxkSkD4uzpnC3vpTWn7KTsh10o6OcISYOODGu-7wFJURsDDFUA6M8GyEId93Vq1ubZopSXf58PhtMQ-rKak6KrZjHxAN7VmXm3TZujt8E97pEYjaJC4iRFTNRdnyUe15rzPMzx8DgPBrQp8c9KM1m6Rnt6qrm6afnG-RK5gVniU32nPYDNvWu9oHErbUuO7pqLlFQA&state=4d71120eecc2a443bf650b0bc6e382d98e6ea2be7c62ba61" for ::1 at 2022-12-02 09:04:41 +0000
+Processing by OmniauthController#facebook as HTML
+  Parameters: {"code"=>"AQB9sIS7e5AV5Ra8RAyAsJ_iXT-0L60-_r1SL2CPivMnXe9EXm3ns2Qem-3RPROjtOnA6ob_3ikAyPCC-ppUOoBaH2yrOPY0bmtRaXpuN42eE5kipXkJyi951q7n5Wf9f1RuOJRE5RPwnpYy79hKq-7MKNjvyipPSnWrKjbHR8Q9nouqwbR81mnEHyomWJCl-bk8whTig2IfwA9wMtY2R7Hp-Bm8XMPjDc5-lO5iyxkSkD4uzpnC3vpTWn7KTsh10o6OcISYOODGu-7wFJURsDDFUA6M8GyEId93Vq1ubZopSXf58PhtMQ-rKak6KrZjHxAN7VmXm3TZujt8E97pEYjaJC4iRFTNRdnyUe15rzPMzx8DgPBrQp8c9KM1m6Rnt6qrm6afnG-RK5gVniU32nPYDNvWu9oHErbUuO7pqLlFQA", "state"=>"4d71120eecc2a443bf650b0bc6e382d98e6ea2be7c62ba61"}
+Completed 401 Unauthorized in 1ms (ActiveRecord: 0.0ms | Allocations: 114)
+
+
+Started GET "/users/sign_in" for ::1 at 2022-12-02 09:04:41 +0000
+Processing by Devise::SessionsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering devise/sessions/new.html.erb within layouts/application
+  Rendered devise/shared/_links.html.erb (Duration: 1.0ms | Allocations: 533)
+  Rendered devise/sessions/new.html.erb within layouts/application (Duration: 63.3ms | Allocations: 20544)
+  Rendered layout layouts/application.html.erb (Duration: 74.0ms | Allocations: 23782)
+Completed 200 OK in 78ms (Views: 74.7ms | ActiveRecord: 0.2ms | Allocations: 24767)
+
+
+Started POST "/users/auth/facebook" for ::1 at 2022-12-02 09:04:48 +0000
+Started GET "/users/auth/facebook/callback?code=AQBAa5JKn7iBbzgU_Ncg9NqeMZduWwMPCLXzzo5APUSZ0QyAl-1IIBBI5hqeGJQwIn3q7HnkBfr9MFUcb6QpY32Ybb8ynn2YYw6AWIKOcHHnM7SCD2U6MRCeHVnd4zKcHYYCCHf468Df3iSr6ZiVLAVeMVByaswtJkxxOyJ4S2cunhKeySLIhbfwkUqBwMW8v3aYDwVJnHpeBDX8rnaO6nl76qfHF2Le6J1nbAPaYjHXaT62Yb3WlhbQo8bvIxk0TaAUhXaHoq2Fs70oooMD3t41zMsvx80jOgKj3bK7bP_w3GVKzbbvdFrTw9dxD5JJbAGFOPajzeKCDETsa_6jSzB7rZXsIIy40sGw9MLuRQGZaQ26Jogstgb3YKibeLoGDiE_-xWh6I6yMkD7uLocl-5K2TsOz8IcHtmOMSqf0qEI3Q&state=1dabcb1253881469793a1a2333a380f141ad319a11dced9f" for ::1 at 2022-12-02 09:04:49 +0000
+Processing by OmniauthController#facebook as HTML
+  Parameters: {"code"=>"AQBAa5JKn7iBbzgU_Ncg9NqeMZduWwMPCLXzzo5APUSZ0QyAl-1IIBBI5hqeGJQwIn3q7HnkBfr9MFUcb6QpY32Ybb8ynn2YYw6AWIKOcHHnM7SCD2U6MRCeHVnd4zKcHYYCCHf468Df3iSr6ZiVLAVeMVByaswtJkxxOyJ4S2cunhKeySLIhbfwkUqBwMW8v3aYDwVJnHpeBDX8rnaO6nl76qfHF2Le6J1nbAPaYjHXaT62Yb3WlhbQo8bvIxk0TaAUhXaHoq2Fs70oooMD3t41zMsvx80jOgKj3bK7bP_w3GVKzbbvdFrTw9dxD5JJbAGFOPajzeKCDETsa_6jSzB7rZXsIIy40sGw9MLuRQGZaQ26Jogstgb3YKibeLoGDiE_-xWh6I6yMkD7uLocl-5K2TsOz8IcHtmOMSqf0qEI3Q", "state"=>"1dabcb1253881469793a1a2333a380f141ad319a11dced9f"}
+Completed 401 Unauthorized in 1ms (ActiveRecord: 0.0ms | Allocations: 114)
+
+
+Started GET "/users/sign_in" for ::1 at 2022-12-02 09:04:50 +0000
+Processing by Devise::SessionsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering devise/sessions/new.html.erb within layouts/application
+  Rendered devise/shared/_links.html.erb (Duration: 1.1ms | Allocations: 533)
+  Rendered devise/sessions/new.html.erb within layouts/application (Duration: 47.9ms | Allocations: 20543)
+  Rendered layout layouts/application.html.erb (Duration: 56.8ms | Allocations: 23781)
+Completed 200 OK in 61ms (Views: 57.5ms | ActiveRecord: 0.3ms | Allocations: 24766)
+
+
+Started POST "/users/auth/facebook" for ::1 at 2022-12-02 09:05:53 +0000
+Started GET "/users/auth/facebook/callback?code=AQDU6dpK_EGS1pbFRcHDMylww4xODsu-r81Mp2HHdsvMSFRpK07wag6rjkk-QRqJNGcgyce61MQdMkarEz1lkrqzOBlMhuj2plXsxoZg9J9LqEjcD7YO-JT6Bcervvt43nBFkNC6LMwMPTASE61eCrWAcsnLvIp_h-p9VFhPGxh8y2vyRj6d3UG5DQYWKHhszS6E_7DhncLcqDxGYYlbqBCYabmgy2Y1fu_-SS-SkZvz8ia-9U07lbkiGgdoHUhwjbnPzLtXjPH54m_gqCG96QdthfLDypC-PQhg6rCRHCukne7FLp7LukPvWpm1KpND0Szwws0pXTLnwjQSeEpazNCKrAVScJmZ8SbxEQSeJYuFD7yBj9Varyi3u4JqH31bE_6vEGMIG99ttu6kcl03hQH8N7nvdSxZziEi5XP6IykX2g&state=eecbc9dd622a576a69b24aaca55dfe85f2d8b26603f87789" for ::1 at 2022-12-02 09:05:53 +0000
+Processing by OmniauthController#facebook as HTML
+  Parameters: {"code"=>"AQDU6dpK_EGS1pbFRcHDMylww4xODsu-r81Mp2HHdsvMSFRpK07wag6rjkk-QRqJNGcgyce61MQdMkarEz1lkrqzOBlMhuj2plXsxoZg9J9LqEjcD7YO-JT6Bcervvt43nBFkNC6LMwMPTASE61eCrWAcsnLvIp_h-p9VFhPGxh8y2vyRj6d3UG5DQYWKHhszS6E_7DhncLcqDxGYYlbqBCYabmgy2Y1fu_-SS-SkZvz8ia-9U07lbkiGgdoHUhwjbnPzLtXjPH54m_gqCG96QdthfLDypC-PQhg6rCRHCukne7FLp7LukPvWpm1KpND0Szwws0pXTLnwjQSeEpazNCKrAVScJmZ8SbxEQSeJYuFD7yBj9Varyi3u4JqH31bE_6vEGMIG99ttu6kcl03hQH8N7nvdSxZziEi5XP6IykX2g", "state"=>"eecbc9dd622a576a69b24aaca55dfe85f2d8b26603f87789"}
+Completed 401 Unauthorized in 1ms (ActiveRecord: 0.0ms | Allocations: 114)
+
+
+Started GET "/users/sign_in" for ::1 at 2022-12-02 09:05:54 +0000
+Processing by Devise::SessionsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering devise/sessions/new.html.erb within layouts/application
+  Rendered devise/shared/_links.html.erb (Duration: 0.7ms | Allocations: 533)
+  Rendered devise/sessions/new.html.erb within layouts/application (Duration: 47.6ms | Allocations: 20543)
+  Rendered layout layouts/application.html.erb (Duration: 67.2ms | Allocations: 23781)
+Completed 200 OK in 70ms (Views: 67.7ms | ActiveRecord: 0.2ms | Allocations: 24767)
+
+
+Started GET "/users/sign_up" for ::1 at 2022-12-02 09:05:57 +0000
+Processing by Devise::RegistrationsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering devise/registrations/new.html.erb within layouts/application
+  Rendered devise/shared/_links.html.erb (Duration: 0.8ms | Allocations: 514)
+  Rendered devise/registrations/new.html.erb within layouts/application (Duration: 47.7ms | Allocations: 22500)
+  Rendered layout layouts/application.html.erb (Duration: 57.8ms | Allocations: 25946)
+Completed 200 OK in 70ms (Views: 64.0ms | ActiveRecord: 0.5ms | Allocations: 27284)
+
+
+Started POST "/users/auth/facebook" for ::1 at 2022-12-02 09:06:00 +0000
+Started GET "/users/auth/facebook/callback?code=AQC_l0sGf9wy-NL2vGQb0lb-F_tv6k9nbGg3NVXMg6jmrAQNhVjJTM9XChmkLHbX5_3yYChLGkNbbqstOMLiVD5foqDdXbS_5aF_dUpCwGyduiQEsirmStHtJAwWqXRAhu_dptJMTClktYcZpmOFI6_g4P2BWNyUOGDJFWleiJErtEPgAUFJ-dBDcWAXTAhGDRvqLD6D6Og0rXtXZZ-56iGneDOdaSVqbwDdyZx1q5Bc9_u8nY3RptBomaJ3cPYRFHRR0w1gos-qTOt2dz37W7uXYvHJ-y_sRUCT08az0_iAV5Rkytq3r5gNVB6Hcw8ZMa-VWKdZ5Mu0LEf8vSZD5Y4rqLww2zVrJ63Jj3Bqn_lt59G4Y_-WP3pJiRVz-Us5bMS3LqjVQkk0AmT2lQruiBbxNuublwS0XBWNB12Pleo6tg&state=a4eae46af65674d1d9cbc850423a2983cb1889e7201f9a38" for ::1 at 2022-12-02 09:06:00 +0000
+Processing by OmniauthController#facebook as HTML
+  Parameters: {"code"=>"AQC_l0sGf9wy-NL2vGQb0lb-F_tv6k9nbGg3NVXMg6jmrAQNhVjJTM9XChmkLHbX5_3yYChLGkNbbqstOMLiVD5foqDdXbS_5aF_dUpCwGyduiQEsirmStHtJAwWqXRAhu_dptJMTClktYcZpmOFI6_g4P2BWNyUOGDJFWleiJErtEPgAUFJ-dBDcWAXTAhGDRvqLD6D6Og0rXtXZZ-56iGneDOdaSVqbwDdyZx1q5Bc9_u8nY3RptBomaJ3cPYRFHRR0w1gos-qTOt2dz37W7uXYvHJ-y_sRUCT08az0_iAV5Rkytq3r5gNVB6Hcw8ZMa-VWKdZ5Mu0LEf8vSZD5Y4rqLww2zVrJ63Jj3Bqn_lt59G4Y_-WP3pJiRVz-Us5bMS3LqjVQkk0AmT2lQruiBbxNuublwS0XBWNB12Pleo6tg", "state"=>"a4eae46af65674d1d9cbc850423a2983cb1889e7201f9a38"}
+Completed 401 Unauthorized in 3ms (ActiveRecord: 0.0ms | Allocations: 140)
+
+
+Started GET "/users/sign_in" for ::1 at 2022-12-02 09:06:01 +0000
+Processing by Devise::SessionsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering devise/sessions/new.html.erb within layouts/application
+  Rendered devise/shared/_links.html.erb (Duration: 0.7ms | Allocations: 533)
+  Rendered devise/sessions/new.html.erb within layouts/application (Duration: 34.4ms | Allocations: 20552)
+  Rendered layout layouts/application.html.erb (Duration: 40.9ms | Allocations: 23790)
+Completed 200 OK in 44ms (Views: 41.5ms | ActiveRecord: 0.2ms | Allocations: 24808)
+
+
+Started POST "/users/auth/github" for ::1 at 2022-12-02 09:06:36 +0000
+Started GET "/users/auth/github/callback?code=c0aa0b208f6e4e8e209a&state=68149d5a4fcefd358761859a287beea4683ce2f72f4b65cf" for ::1 at 2022-12-02 09:06:53 +0000
+Processing by OmniauthController#github as HTML
+  Parameters: {"code"=>"c0aa0b208f6e4e8e209a", "state"=>"68149d5a4fcefd358761859a287beea4683ce2f72f4b65cf"}
+Completed 401 Unauthorized in 2ms (ActiveRecord: 0.0ms | Allocations: 114)
+
+
+Started GET "/users/sign_in" for ::1 at 2022-12-02 09:06:54 +0000
+Processing by Devise::SessionsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering devise/sessions/new.html.erb within layouts/application
+  Rendered devise/shared/_links.html.erb (Duration: 0.7ms | Allocations: 533)
+  Rendered devise/sessions/new.html.erb within layouts/application (Duration: 48.6ms | Allocations: 20562)
+  Rendered layout layouts/application.html.erb (Duration: 79.8ms | Allocations: 23843)
+Completed 200 OK in 84ms (Views: 80.5ms | ActiveRecord: 0.2ms | Allocations: 24830)
+
+
+Started POST "/users/auth/github" for ::1 at 2022-12-02 09:07:03 +0000
+Started GET "/users/auth/github/callback?code=a54e90336484b4211ba8&state=f46223b23214134639742af73ca808d4f023540a1cb53676" for ::1 at 2022-12-02 09:07:03 +0000
+Processing by OmniauthController#github as HTML
+  Parameters: {"code"=>"a54e90336484b4211ba8", "state"=>"f46223b23214134639742af73ca808d4f023540a1cb53676"}
+Completed 401 Unauthorized in 1ms (ActiveRecord: 0.0ms | Allocations: 114)
+
+
+Started GET "/users/sign_in" for ::1 at 2022-12-02 09:07:04 +0000
+Processing by Devise::SessionsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering devise/sessions/new.html.erb within layouts/application
+  Rendered devise/shared/_links.html.erb (Duration: 1.0ms | Allocations: 533)
+  Rendered devise/sessions/new.html.erb within layouts/application (Duration: 40.7ms | Allocations: 20544)
+  Rendered layout layouts/application.html.erb (Duration: 45.9ms | Allocations: 23782)
+Completed 200 OK in 49ms (Views: 46.4ms | ActiveRecord: 0.3ms | Allocations: 24767)
+
+
+Started GET "/user" for ::1 at 2022-12-02 09:12:00 +0000
+  
+ActionController::RoutingError (No route matches [GET] "/user"):
+  
+Started GET "/user/1" for ::1 at 2022-12-02 09:12:04 +0000
+  
+ActionController::RoutingError (No route matches [GET] "/user/1"):
+  
+  [1m[36mUser Load (1.2ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+Started GET "/users/1" for ::1 at 2022-12-02 09:12:32 +0000
+  
+ActionController::RoutingError (No route matches [GET] "/users/1"):
+  
+Started GET "/" for ::1 at 2022-12-05 08:03:22 +0000
+  [1m[36mActiveRecord::SchemaMigration Pluck (6.5ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by PostsController#index as HTML
+Completed 401 Unauthorized in 143ms (ActiveRecord: 69.8ms | Allocations: 9179)
+
+
+Started GET "/users/sign_in" for ::1 at 2022-12-05 08:03:23 +0000
+Processing by Devise::SessionsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering devise/sessions/new.html.erb within layouts/application
+  Rendered devise/shared/_links.html.erb (Duration: 3.3ms | Allocations: 1333)
+  Rendered devise/sessions/new.html.erb within layouts/application (Duration: 79.6ms | Allocations: 29741)
+  Rendered layout layouts/application.html.erb (Duration: 171.1ms | Allocations: 56558)
+Completed 200 OK in 252ms (Views: 183.3ms | ActiveRecord: 51.6ms | Allocations: 65985)
+
+
+Started POST "/users/auth/facebook" for ::1 at 2022-12-05 08:03:28 +0000
+Started GET "/users/auth/facebook/callback?code=AQADDpP5NKC1ONI8uX7WhJCI1CuLUzkq78jFVmGkCi8Gn8ZbFmr_PwSnPFrUx4g2BliWyKJcoZGHHQi-eMFLvu2Dy5OwctJDKqAVieHrfdRNl1sVcoD9Zwb9ni3V-H719K1D_VoSlMLbeVeOQ2qLc56AXeKT4KdN_Iu7KdzKLw9dEVfkLFhn-afrkZGEoGgG9PU91leFsXFozTVPjxwu9dyrvvUI3sV0L9smVlzBVXZvdJEV8J5m9g9K8ZLQjE-UaM6a2juyO6qc2vMFhEmQz-HPlviBpQCLj3llFK4BC4_bF34BTrudfJ6KpT8NFyXAON5ZWG6_CJvWsymqtQWOclo_Zica456EcFnw5w93eaYLSmzFeOozcCXPGgk-6gjLrTpRFKRc9Oo2rSBXAKhfbK81L6pRi01gcJ3BNfUZOlYjyA&state=a7a4aa2bc00308747045c40e337a40b027bdf707c825a3b3" for ::1 at 2022-12-05 08:03:28 +0000
+Processing by OmniauthController#facebook as HTML
+  Parameters: {"code"=>"AQADDpP5NKC1ONI8uX7WhJCI1CuLUzkq78jFVmGkCi8Gn8ZbFmr_PwSnPFrUx4g2BliWyKJcoZGHHQi-eMFLvu2Dy5OwctJDKqAVieHrfdRNl1sVcoD9Zwb9ni3V-H719K1D_VoSlMLbeVeOQ2qLc56AXeKT4KdN_Iu7KdzKLw9dEVfkLFhn-afrkZGEoGgG9PU91leFsXFozTVPjxwu9dyrvvUI3sV0L9smVlzBVXZvdJEV8J5m9g9K8ZLQjE-UaM6a2juyO6qc2vMFhEmQz-HPlviBpQCLj3llFK4BC4_bF34BTrudfJ6KpT8NFyXAON5ZWG6_CJvWsymqtQWOclo_Zica456EcFnw5w93eaYLSmzFeOozcCXPGgk-6gjLrTpRFKRc9Oo2rSBXAKhfbK81L6pRi01gcJ3BNfUZOlYjyA", "state"=>"a7a4aa2bc00308747045c40e337a40b027bdf707c825a3b3"}
+Completed 401 Unauthorized in 1ms (ActiveRecord: 0.0ms | Allocations: 243)
+
+
+Started GET "/users/sign_in" for ::1 at 2022-12-05 08:03:29 +0000
+Processing by Devise::SessionsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering devise/sessions/new.html.erb within layouts/application
+  Rendered devise/shared/_links.html.erb (Duration: 0.8ms | Allocations: 543)
+  Rendered devise/sessions/new.html.erb within layouts/application (Duration: 23.5ms | Allocations: 20645)
+  Rendered layout layouts/application.html.erb (Duration: 29.6ms | Allocations: 23974)
+Completed 200 OK in 33ms (Views: 30.4ms | ActiveRecord: 0.2ms | Allocations: 25050)
+
+
+Started GET "/users/sign_in" for ::1 at 2022-12-05 08:12:57 +0000
+Processing by Devise::SessionsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering devise/sessions/new.html.erb within layouts/application
+  Rendered devise/shared/_links.html.erb (Duration: 1.0ms | Allocations: 591)
+  Rendered devise/sessions/new.html.erb within layouts/application (Duration: 27.6ms | Allocations: 20823)
+  Rendered layout layouts/application.html.erb (Duration: 37.9ms | Allocations: 24219)
+Completed 200 OK in 102ms (Views: 39.9ms | ActiveRecord: 8.7ms | Allocations: 31606)
+
+
+Started POST "/users/auth/facebook" for ::1 at 2022-12-05 08:13:00 +0000
+Started GET "/users/auth/facebook/callback?code=AQCn-XWhPQyomwdOTEQ-7kYsrfH7SJLTRjuQFNEZkHW0cyTVL4iSCK_EYvKQFORI5Av8OWKRQ_oOO7X_okbuSmBRbN9lcGQErP5IJlqt7idRrLt3oWLMD4FvdL35eT2v3FpB2U65rbBiwqPfHOm9NTrrs55CV2t0l6On04Ig_OddHwAuEP2WX3dH-haTt3rEAbCruKAMGlBlnKIudR6FryHA1_kmABQIUs7ayj_fMlpLE-kbJXNPykKQvWxvFvkJ0ppzaeNoxNlQ09KKT57uL9lalXcp9gMo8E54Z8rW63GbPkQrm4R1dEvRvixQpjDObpukDeDMRZbVvUVaahOWXjrdUBxb2fidiH2d6bChI6Iqi35QSWtqsD6uPIoZqbHr4SveAjHioLP4hjcPzpusUSU4QuSqOelutMpcAdV-HYVjPg&state=f7f324b566930b9eb7b54bc5967f1f15877b9d477f05975c" for ::1 at 2022-12-05 08:13:00 +0000
+Processing by OmniauthController#facebook as HTML
+  Parameters: {"code"=>"AQCn-XWhPQyomwdOTEQ-7kYsrfH7SJLTRjuQFNEZkHW0cyTVL4iSCK_EYvKQFORI5Av8OWKRQ_oOO7X_okbuSmBRbN9lcGQErP5IJlqt7idRrLt3oWLMD4FvdL35eT2v3FpB2U65rbBiwqPfHOm9NTrrs55CV2t0l6On04Ig_OddHwAuEP2WX3dH-haTt3rEAbCruKAMGlBlnKIudR6FryHA1_kmABQIUs7ayj_fMlpLE-kbJXNPykKQvWxvFvkJ0ppzaeNoxNlQ09KKT57uL9lalXcp9gMo8E54Z8rW63GbPkQrm4R1dEvRvixQpjDObpukDeDMRZbVvUVaahOWXjrdUBxb2fidiH2d6bChI6Iqi35QSWtqsD6uPIoZqbHr4SveAjHioLP4hjcPzpusUSU4QuSqOelutMpcAdV-HYVjPg", "state"=>"f7f324b566930b9eb7b54bc5967f1f15877b9d477f05975c"}
+Completed 401 Unauthorized in 1ms (ActiveRecord: 0.0ms | Allocations: 254)
+
+
+Started GET "/users/sign_in" for ::1 at 2022-12-05 08:13:01 +0000
+Processing by Devise::SessionsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering devise/sessions/new.html.erb within layouts/application
+  Rendered devise/shared/_links.html.erb (Duration: 1.4ms | Allocations: 543)
+  Rendered devise/sessions/new.html.erb within layouts/application (Duration: 23.2ms | Allocations: 20647)
+  Rendered layout layouts/application.html.erb (Duration: 31.0ms | Allocations: 23975)
+Completed 200 OK in 36ms (Views: 31.8ms | ActiveRecord: 0.9ms | Allocations: 25048)
+
+
+Started POST "/users/sign_in" for ::1 at 2022-12-05 08:13:05 +0000
+Processing by Devise::SessionsController#create as HTML
+  Parameters: {"authenticity_token"=>"[FILTERED]", "user"=>{"email"=>"", "password"=>"[FILTERED]", "remember_me"=>"0"}, "commit"=>"Sign in"}
+Completed 401 Unauthorized in 3ms (ActiveRecord: 0.3ms | Allocations: 816)
+
+
+Processing by Devise::SessionsController#new as HTML
+  Parameters: {"authenticity_token"=>"[FILTERED]", "user"=>{"email"=>"", "password"=>"[FILTERED]", "remember_me"=>"0"}, "commit"=>"Sign in"}
+  Rendering layout layouts/application.html.erb
+  Rendering devise/sessions/new.html.erb within layouts/application
+  Rendered devise/shared/_links.html.erb (Duration: 1.1ms | Allocations: 533)
+  Rendered devise/sessions/new.html.erb within layouts/application (Duration: 37.4ms | Allocations: 20472)
+  Rendered layout layouts/application.html.erb (Duration: 45.6ms | Allocations: 23711)
+Completed 200 OK in 48ms (Views: 46.3ms | ActiveRecord: 0.0ms | Allocations: 24216)
+
+
+Started POST "/users/auth/facebook" for ::1 at 2022-12-05 08:13:07 +0000
+Started GET "/users/auth/facebook/callback?code=AQA75VufvNVJYzhJPEAr43dwLgm2oWAoqpmIMNqKhvIWb31da9DZWQvjET_DS8hNYHyE-Fwe3GH4T6RSyO9P4hcbf5nyqutDObZYEQRNF45yhq2Z_NRncAJMAOw_xVmzoz4Kr11u2nMjoqJzqwTyfXisQmh_-TtbvE6I_a5fx3B43gyBbSLU7m69W8ZsC9FBwAzvpebKDaTPWticBFJP4h9uUtV3QzDU7rFLasvBAQFCGiyaQ7L0RHfVe76NZtubaaZ0TcSB3avZGcUkB_JEsXPb9WsVdSUYcHPKZ7vhY4rZLnjyekvErnVdRFoU9WeRSEffq8RJEP392QYBRCqXMX2MGmYbtelkjg6H5nUFgNU6VLKKxCl7AIqbsO6oL1FHabhMlxTbwoLU1yGB59WFgc8QTprcc53iBqVFaXCKrKoELg&state=5ef473796b9fb453eb5947d3826394f586d3e3376362f93e" for ::1 at 2022-12-05 08:13:08 +0000
+Processing by OmniauthController#facebook as HTML
+  Parameters: {"code"=>"AQA75VufvNVJYzhJPEAr43dwLgm2oWAoqpmIMNqKhvIWb31da9DZWQvjET_DS8hNYHyE-Fwe3GH4T6RSyO9P4hcbf5nyqutDObZYEQRNF45yhq2Z_NRncAJMAOw_xVmzoz4Kr11u2nMjoqJzqwTyfXisQmh_-TtbvE6I_a5fx3B43gyBbSLU7m69W8ZsC9FBwAzvpebKDaTPWticBFJP4h9uUtV3QzDU7rFLasvBAQFCGiyaQ7L0RHfVe76NZtubaaZ0TcSB3avZGcUkB_JEsXPb9WsVdSUYcHPKZ7vhY4rZLnjyekvErnVdRFoU9WeRSEffq8RJEP392QYBRCqXMX2MGmYbtelkjg6H5nUFgNU6VLKKxCl7AIqbsO6oL1FHabhMlxTbwoLU1yGB59WFgc8QTprcc53iBqVFaXCKrKoELg", "state"=>"5ef473796b9fb453eb5947d3826394f586d3e3376362f93e"}
+Completed 401 Unauthorized in 1ms (ActiveRecord: 0.0ms | Allocations: 114)
+
+
+Started GET "/users/sign_in" for ::1 at 2022-12-05 08:13:08 +0000
+Processing by Devise::SessionsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering devise/sessions/new.html.erb within layouts/application
+  Rendered devise/shared/_links.html.erb (Duration: 0.9ms | Allocations: 533)
+  Rendered devise/sessions/new.html.erb within layouts/application (Duration: 64.7ms | Allocations: 20517)
+  Rendered layout layouts/application.html.erb (Duration: 72.2ms | Allocations: 23798)
+Completed 200 OK in 75ms (Views: 72.8ms | ActiveRecord: 0.2ms | Allocations: 24784)
+
+
+  [1m[36mUser Load (1.7ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  [1m[36mUser Load (40.4ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+Started GET "/users/sign_up" for ::1 at 2022-12-05 08:13:59 +0000
+Processing by Devise::RegistrationsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering devise/registrations/new.html.erb within layouts/application
+  Rendered devise/shared/_links.html.erb (Duration: 1.1ms | Allocations: 592)
+  Rendered devise/registrations/new.html.erb within layouts/application (Duration: 35.2ms | Allocations: 23144)
+  Rendered layout layouts/application.html.erb (Duration: 51.3ms | Allocations: 26593)
+Completed 200 OK in 60ms (Views: 54.8ms | ActiveRecord: 0.6ms | Allocations: 28369)
+
+
+Started POST "/users/auth/github" for ::1 at 2022-12-05 08:14:02 +0000
+Started GET "/users/auth/github/callback?code=cb2e187e83873c2af0d6&state=4ee357e77d5f699203a27ddb3d9b716cfacd0625cd6a55a1" for ::1 at 2022-12-05 08:14:03 +0000
+Processing by OmniauthController#github as HTML
+  Parameters: {"code"=>"cb2e187e83873c2af0d6", "state"=>"4ee357e77d5f699203a27ddb3d9b716cfacd0625cd6a55a1"}
+Completed 401 Unauthorized in 1ms (ActiveRecord: 0.0ms | Allocations: 141)
+
+
+Started GET "/users/sign_in" for ::1 at 2022-12-05 08:14:04 +0000
+Processing by Devise::SessionsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering devise/sessions/new.html.erb within layouts/application
+  Rendered devise/shared/_links.html.erb (Duration: 1.4ms | Allocations: 533)
+  Rendered devise/sessions/new.html.erb within layouts/application (Duration: 27.2ms | Allocations: 20535)
+  Rendered layout layouts/application.html.erb (Duration: 34.8ms | Allocations: 23774)
+Completed 200 OK in 38ms (Views: 35.3ms | ActiveRecord: 0.4ms | Allocations: 24806)
+
+
+Started POST "/users/auth/github" for ::1 at 2022-12-05 08:14:07 +0000
+Started GET "/users/auth/github/callback?code=c6180d35f6e9d8509c15&state=b2917b5bbdb2f27d99fa2cfcf85c3ecb4ea5c8a20f51b205" for ::1 at 2022-12-05 08:14:07 +0000
+Processing by OmniauthController#github as HTML
+  Parameters: {"code"=>"c6180d35f6e9d8509c15", "state"=>"b2917b5bbdb2f27d99fa2cfcf85c3ecb4ea5c8a20f51b205"}
+Completed 401 Unauthorized in 1ms (ActiveRecord: 0.0ms | Allocations: 114)
+
+
+Started GET "/users/sign_in" for ::1 at 2022-12-05 08:14:08 +0000
+Processing by Devise::SessionsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering devise/sessions/new.html.erb within layouts/application
+  Rendered devise/shared/_links.html.erb (Duration: 2.4ms | Allocations: 533)
+  Rendered devise/sessions/new.html.erb within layouts/application (Duration: 22.7ms | Allocations: 20507)
+  Rendered layout layouts/application.html.erb (Duration: 28.9ms | Allocations: 23745)
+Completed 200 OK in 32ms (Views: 29.7ms | ActiveRecord: 0.2ms | Allocations: 24730)
+
+
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
