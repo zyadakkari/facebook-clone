@@ -1,45 +1,63 @@
-<div class="row py-5">
-    <div class="col-lg-4 mx-auto">
+<div class="fluid">
+    <div class="row">
 
-        <%= simple_form_for(resource, as: resource_name, url: registration_path(resource_name)) do |f| %>
-          <%= f.error_notification %>
+    <div class="card mx-auto my-auto" style="width: 36rem;">
+      <div class="card-body">
+      <h5 class="card-title">Sign up</h5>
+      <p class="card-text">Stay connected to your world</p>
 
-          <div class="form-inputs">
-            <div class="field mt-5">
-                <%= f.input :name,
+    <%= simple_form_for(resource, as: resource_name, url: registration_path(resource_name)) do |f| %>
+      <%= f.error_notification %>
+
+      <div class="row mt-3">
+          <div class="col">
+            <%= f.input :name,
                         required: true,
                         autofocus: true,
-                        class: "form-control py-2" %>
-            </div>
-            <div class="field mt-3">
+                        class: "form-control form-control-sm py-2" %>
+          </div>
+          <div class="col">
             <%= f.input :email,
                         required: true,
                         autofocus: true,
                         input_html: { autocomplete: "email" },
-                        class: "form-control py-2" %>
-            </div>
-            <div class="field mt-3">
+                        class: "form-control form-control-sm py-2" %>
+          </div>
+      </div>
+      <div class="row mt-3">
+          <div class="col">
             <%= f.input :password,
                         required: true,
                         hint: ("#{@minimum_password_length} characters minimum" if @minimum_password_length),
                         input_html: { autocomplete: "new-password" },
-                        class: "form-control py-2" %>
-            </div>
-            <div class="field mt-3">
+                        class: "form-control form-control-sm py-2" %>
+          </div>
+          <div class="col">
             <%= f.input :password_confirmation,
                         required: true,
                         input_html: { autocomplete: "new-password" },
-                        class: "form-control py-2" %>
-            </div>
+                        class: "form-control form-control-sm py-2" %>
           </div>
+      </div>
+      <div class="row mt-3">
+          <div class="col d-grid gap-2">
+            <%= f.button :submit, "Sign up", class: "btn btn-primary" %>
 
-          <div class="form-actions">
-            <div class="actions mt-4 mb-5">
-                <%= f.button :submit, "Sign up", class: "form-control py-2 btn btn-primary fw-bold shadow" %>
-            </div>
           </div>
-        <% end %>
+      </div>
+    <% end %>
+    <br>
+    <div class="row text-muted">
+        <div class="col"><hr></div>
+        <div class="col-auto">or</div>
+        <div class="col"><hr></div>
+    </div>
 
         <%= render "devise/shared/links" %>
-    </div>
+
+
+        </div>
+
+        </div>
+</div>
 </div>

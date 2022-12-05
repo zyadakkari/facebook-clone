@@ -1,5 +1,5 @@
 Rails.application.routes.draw do
-  root 'posts#index'
+  root 'pages#home'
 
   get 'friends/index'
   get 'friends/destroy'
