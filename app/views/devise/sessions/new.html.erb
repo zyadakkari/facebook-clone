@@ -1,4 +1,4 @@
-<div class="card mx-auto my-auto" style="width: 36rem;">
+<div class="card mx-auto mt-5" style="width: 36rem;">
   <div class="card-body">
     <h5 class="card-title">Sign in</h5>
     <p class="card-text">Stay connected to your world</p>
@@ -27,6 +27,7 @@
             <%= f.button :submit, "Sign in", class: 'btn btn-primary login-btn btn-block' %>
           </div>
       </div>
+      <br>
       <div class="clearfix">
         <%= f.input :remember_me, as: :boolean if devise_mapping.rememberable? %>
       </div>

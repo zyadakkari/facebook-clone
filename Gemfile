@@ -68,7 +68,7 @@ gem 'devise'
 # gem 'devise', github: 'heartcombo/devise', branch: 'ca-omniauth-2'
 
 gem 'simple_form'
-
+gem 'pry-rails'
 gem 'faker', :git => 'https://github.com/faker-ruby/faker.git', :branch => 'main'
 
 gem 'omniauth-facebook', '~> 4.0'

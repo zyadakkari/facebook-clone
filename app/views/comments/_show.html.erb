@@ -1,0 +1,10 @@
+<div class="card">
+
+  <div class="card-body">
+    <blockquote class="blockquote mb-0">
+      <h6 class="card-subtitle mb-2 text-muted"><%= User.find(comment.user_id).name %></h6>
+      <p><%= comment.body %></p>
+      <footer class="blockquote-footer"><%= comment.created_at.to_fs(:time) %> on <cite title="Source Title"><%= comment.created_at.to_date.to_fs(:rfc822) %></cite></footer>
+    </blockquote>
+  </div>
+</div>

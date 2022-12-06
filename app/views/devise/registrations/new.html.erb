@@ -1,7 +1,6 @@
-<div class="fluid">
-    <div class="row">
 
-    <div class="card mx-auto my-auto" style="width: 36rem;">
+
+    <div class="card mx-auto mt-5" style="width: 36rem;">
       <div class="card-body">
       <h5 class="card-title">Sign up</h5>
       <p class="card-text">Stay connected to your world</p>
@@ -14,14 +13,14 @@
             <%= f.input :name,
                         required: true,
                         autofocus: true,
-                        class: "form-control form-control-sm py-2" %>
+                        class: "form-control form-control-sm input-sm py-2" %>
           </div>
           <div class="col">
             <%= f.input :email,
                         required: true,
                         autofocus: true,
                         input_html: { autocomplete: "email" },
-                        class: "form-control form-control-sm py-2" %>
+                        class: "form-control form-control-sm input-sm py-2" %>
           </div>
       </div>
       <div class="row mt-3">
@@ -30,13 +29,13 @@
                         required: true,
                         hint: ("#{@minimum_password_length} characters minimum" if @minimum_password_length),
                         input_html: { autocomplete: "new-password" },
-                        class: "form-control form-control-sm py-2" %>
+                        class: "form-control form-control-sm input-sm py-2" %>
           </div>
           <div class="col">
             <%= f.input :password_confirmation,
                         required: true,
                         input_html: { autocomplete: "new-password" },
-                        class: "form-control form-control-sm py-2" %>
+                        class: "form-control form-control-sm input-sm py-2" %>
           </div>
       </div>
       <div class="row mt-3">
@@ -59,5 +58,3 @@
         </div>
 
         </div>
-</div>
-</div>
