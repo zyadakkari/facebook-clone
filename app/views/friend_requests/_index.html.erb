@@ -1,0 +1,38 @@
+
+Friends Requested
+<div class="card" style="width: 18rem;">
+  <ul class="list-group list-group-flush">
+  <% if current_user.friend_requests.empty? %>
+    <li class="list-group-item">You do not currently have any pending requests</li>
+  <% else %>
+    <% current_user.friend_requests.each do |req| %>
+      <li class="list-group-item"><%= User.find(req.friend_id).name %></li>
+    <% end %>
+  <% end %>
+  </ul>
+</div>
+
+
+
+<hr/>
+
+Friend Requests
+<div class="card" style="width: 18rem;">
+  <ul class="list-group list-group-flush">
+  <% if FriendRequest.where(friend_id: current_user.id).empty? %>
+      <li class="list-group-item">You do not currently have any friend requests.</li>
+  <% else %>
+      <% FriendRequest.where(friend_id: current_user.id).each do |incoming| %>
+
+        <li class="list-group-item">
+        <% @friend_request = incoming %>
+        <%= User.find(@friend_request.user_id).name %>
+            <%= form_tag friend_request_path(@friend_request) do %>
+              <%= hidden_field_tag :friend_request, @friend_request %>
+              <%= submit_tag 'Confirm' %>
+        <% end %>
+        </li>
+      <% end %>
+  <% end %>
+  </ul>
+</div>

@@ -7,22 +7,25 @@
     <title>Document</title>
 </head>
 <body>
-    <nav class="navbar navbar-expand-lg bg-light">
+    <nav class="navbar navbar-expand-lg bg-dark">
   <div class="container-fluid">
-    <%= link_to 'Yourbook', root_path %>
+    <%= link_to 'Yourbook', root_path, class: 'navbar text-white navbar-brand nav-link-active'%>
     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
     </button>
     <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
       <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-        <li class="nav-item">
-          <a class="nav-link active" aria-current="page" href="#">Home</a>
+        <li class="nav-item active">
+          <%= link_to 'Home', root_path, class:'nav-link sr-only text-white' %>
         </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#">Link</a>
+        <li class="nav-item active">
+            <%= link_to 'Friends', friends_index_path, class: 'nav-link sr-only text-white' %>
         </li>
-        <li class="nav-item">
-          <a class="nav-link disabled">Disabled</a>
+        <li class="nav-item active">
+          <%= link_to 'Profile', user_path(current_user.id), class: 'nav-link sr-only text-white' %>
+        </li>
+        <li class="nav-item active">
+          <%= link_to "Sign out", destroy_user_session_path, class: 'nav-link sr-only text-white text-muted', method: :delete %>
         </li>
       </ul>
       <form class="d-flex" role="search">

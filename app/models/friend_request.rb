@@ -5,8 +5,9 @@ class FriendRequest < ApplicationRecord
   validate :not_self
 
   def accept
-    user.friends << friend
+    friendship = user.friendships.build(:friend_id => friend.id)
     destroy
+    friendship.save
   end
 
   private

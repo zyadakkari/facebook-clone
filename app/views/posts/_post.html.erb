@@ -6,12 +6,13 @@
   </div>
 
   <div data-target="comments.commentList">
-      <h5>Comments (<%= @post.comments.count %>)</h5>
+      <h6>Comments (<%= @post.comments.count %>) Likes (<%= @post.likes.count %>)</h6>
       <% @post.comments.each do |comment| %>
           <%= render partial: 'comments/show', locals: { comment: comment } %>
       <% end %>
   </div>
   <div>
       <%= render partial: 'comments/form' %>
+      <%= render partial: 'likes/form' %>
   </div>
 </div>

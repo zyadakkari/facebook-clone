@@ -1,12 +1,12 @@
-
-<%= simple_form_for(@like) do |f| %>
-  <%= f.error_notification %>
-  <%= f.error_notification message: f.object.errors[:base].to_sentence if f.object.errors[:base].present? %>
-
-  <div class="form-inputs">
-  </div>
-
-  <div class="form-actions">
-    <%= f.button :submit %>
-  </div>
+<% @post = Post.find(params[:id]) %>
+<% if @post.likes.where(:user_id => current_user.id).empty? %>
+    <%= form_tag likes_path do %>
+      <%= hidden_field_tag :post_id, @post.id %>
+      <%= submit_tag 'Like' %>
+    <% end %>
+<% else %>
+<%= form_tag like_path(@post.likes.where(:user_id => current_user.id)[0].id), method: :delete do %>
+  <%= hidden_field_tag :post_id, @post.id %>
+  <%= submit_tag 'Unlike' %>
+<% end %>
 <% end %>

@@ -12,7 +12,9 @@ class Friendship < ApplicationRecord
   private
 
   def create_inverse_relationship
-    friend.friendships.create(friend: user)
+    # friendship.friendships.create(friend: user)
+    inverse_friendship = User.find(friend_id).friendships.build(:friend_id => user_id)
+    inverse_friendship.save
   end
 
   def destroy_inverse_relationship
@@ -30,4 +32,5 @@ class Friendship < ApplicationRecord
 
   def not_pending
     errors.add(:friend, 'already requested friendship') if friend.pending_friends.include?(user)
+  end
 end
