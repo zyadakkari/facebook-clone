@@ -4,22 +4,48 @@
     <h6 class="card-subtitle mb-2 text-muted"><%= (User.find(post.user_id)).name %></h6>
     <p class="text-muted">at <%= post.created_at.to_date > Time.now.to_date ? post.created_at.to_fs(:rfc822) : post.created_at.to_fs(:time) %></p>
     <p class="card-text"><%= post.body %></p>
-
-
   </div>
-  <%= link_to "Comments (#{post.comments.count})", post_path(post.id), class: "card-link" %>
-  Likes (<%= post.likes.count %> )
-  <% if post.likes.where(:user_id => current_user.id).empty? %>
-      <%= form_tag likes_path do %>
-        <%= hidden_field_tag :post_id, post.id %>
-        <%= submit_tag 'Like' %>
-      <% end %>
-  <% else %>
-  <%= form_tag like_path(post.likes.where(:user_id => current_user.id)[0].id), method: :delete do %>
-    <%= hidden_field_tag :post_id, post.id %>
-    <%= submit_tag 'Unlike' %>
-  <% end %>
- <% end %>
+  <div class="row">
+      <div class="col">
+          <%= link_to "Comments (#{post.comments.count})", post_path(post.id), class: "card-link" %>
+      </div>
+      <div class="col">
+          <div class="row">
+              <% if post.likes.where(:user_id => current_user.id).empty? %>
+              <div class="col">
+                      <% if post.likes.count == 0 %>
+                          <span>No likes</span>
+                      <% elsif post.likes.count == 1 %>
+                          <span><%= User.find(post.likes.first.user_id).name %> likes this</span>
+                      <% else %>
+                          <span><%= User.find(post.likes.first.user_id).name %> and <%= post.likes.count - 1 %> others like this</span>
+                      <% end %>
+              </div>
+              <div class="col">
+                  <%= form_tag likes_path do %>
+                    <%= hidden_field_tag :post_id, post.id %>
+                    <%= submit_tag 'Like', class: 'btn btn-primary btn-sm' %>
+                  <% end %>
+              </div>
+          <% else %>
+              <div class="col">
+                  <% if post.likes.count == 1 %>
+                      <span>You like this</span>
+                  <% else %>
+                      <span>You and <%= post.likes.count -1 %> others like this</span>
+                  <% end %>
+              </div>
+              <div class="col">
+                  <%= form_tag like_path(post.likes.where(:user_id => current_user.id)[0].id), method: :delete do %>
+                    <%= hidden_field_tag :post_id, post.id %>
+                    <%= submit_tag 'Unlike', class: 'btn btn-secondary btn-sm' %>
+                  <% end %>
+              </div>
+         <% end %>
+         </div>
+      </div>
+
+ </div>
 </div>
 
 <% end %>

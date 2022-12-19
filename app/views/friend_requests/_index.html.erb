@@ -1,38 +1,33 @@
 
-Friends Requested
-<div class="card" style="width: 18rem;">
-  <ul class="list-group list-group-flush">
-  <% if current_user.friend_requests.empty? %>
-    <li class="list-group-item">You do not currently have any pending requests</li>
-  <% else %>
-    <% current_user.friend_requests.each do |req| %>
-      <li class="list-group-item"><%= User.find(req.friend_id).name %></li>
-    <% end %>
+<h2>Friends requests</h2>
+
+<% if FriendRequest.where(friend_id: current_user.id).empty? %>
+    <span>You do not currently have any pending requests</span>
+<% else %>
+  <% FriendRequest.where(friend_id: current_user.id).each do |incoming| %>
+    <div class="card" style="width: 18rem;">
+      <img src="..." class="card-img-top" alt="...">
+      <% @friend_request = incoming %>
+      <div class="card-body">
+        <h5 class="card-title"><%= User.find(@friend_request.user_id).name %></h5>
+        <div class="row text-center">
+            <div class="col text-center mt-2 mb-3">
+                <%= form_tag friend_request_path(@friend_request) do %>
+                  <%= hidden_field_tag :friend_request, @friend_request %>
+                  <%= submit_tag 'Confirm', class: 'btn btn-primary mx-auto' %>
+                <% end %>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col text-center">
+                <%= form_tag friend_requests_path(@friend_request), method: :delete do %>
+                  <%= hidden_field_tag :friend_request, @friend_request %>
+                  <%= submit_tag 'Ignore', class: 'btn btn-secondary mx-auto' %>
+                <% end %>
+
+            </div>
+        </div>
+      </div>
+    </div>
   <% end %>
-  </ul>
-</div>
-
-
-
-<hr/>
-
-Friend Requests
-<div class="card" style="width: 18rem;">
-  <ul class="list-group list-group-flush">
-  <% if FriendRequest.where(friend_id: current_user.id).empty? %>
-      <li class="list-group-item">You do not currently have any friend requests.</li>
-  <% else %>
-      <% FriendRequest.where(friend_id: current_user.id).each do |incoming| %>
-
-        <li class="list-group-item">
-        <% @friend_request = incoming %>
-        <%= User.find(@friend_request.user_id).name %>
-            <%= form_tag friend_request_path(@friend_request) do %>
-              <%= hidden_field_tag :friend_request, @friend_request %>
-              <%= submit_tag 'Confirm' %>
-        <% end %>
-        </li>
-      <% end %>
-  <% end %>
-  </ul>
-</div>
+<% end %>
