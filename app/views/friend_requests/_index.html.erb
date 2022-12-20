@@ -5,27 +5,16 @@
     <span>You do not currently have any pending requests</span>
 <% else %>
   <% FriendRequest.where(friend_id: current_user.id).each do |incoming| %>
-    <div class="card" style="width: 18rem;">
+    <div class="card" style="width: 100%;">
       <img src="..." class="card-img-top" alt="...">
       <% @friend_request = incoming %>
       <div class="card-body">
         <h5 class="card-title"><%= User.find(@friend_request.user_id).name %></h5>
-        <div class="row text-center">
-            <div class="col text-center mt-2 mb-3">
-                <%= form_tag friend_request_path(@friend_request) do %>
-                  <%= hidden_field_tag :friend_request, @friend_request %>
-                  <%= submit_tag 'Confirm', class: 'btn btn-primary mx-auto' %>
-                <% end %>
-            </div>
+        <div class="row mt-3 mb-1">
+                <%= button_to "Confirm", friend_request_path(@friend_request), class: 'btn btn-primary btn-block' %>
         </div>
         <div class="row">
-            <div class="col text-center">
-                <%= form_tag friend_requests_path(@friend_request), method: :delete do %>
-                  <%= hidden_field_tag :friend_request, @friend_request %>
-                  <%= submit_tag 'Ignore', class: 'btn btn-secondary mx-auto' %>
-                <% end %>
-
-            </div>
+                <%= button_to "Ignore", friend_request_path(@friend_request), method: :delete, class: 'btn btn-secondary btn-block' %>
         </div>
       </div>
     </div>

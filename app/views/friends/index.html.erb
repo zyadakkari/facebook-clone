@@ -1,26 +1,51 @@
-<div class="container mt-5">
+<div class="container">
+    <div class="row mt-4 mb-4">
 
-<%= render 'friend_requests/index' %>
-<hr/>
+        <h2>Friends requests</h2>
 
-<% @users = User.all %>
-<div class="container text-center mt-5">
-    <h3 class="mb-3">People you may know</h3>
-  <div class="row gx-5">
-    <% @users.each do |user| %>
-    <%  if user.id != current_user.id %>
-    <div class="col-lg-4 d-flex align-items-stretch">
-        <div class="card d-block w-100" style="width: 18rem;">
-            <div class="card-body">
-              <h5 class="card-title"><%= user.name %></h5>
-              <h6 class="card-subtitle mb-2 text-muted"></h6>
-              <p class="card-text"></p>
-              <%= link_to "Go to profile", user_path(user.id) %>
+        <% if FriendRequest.where(friend_id: current_user.id).empty? %>
+            <span>You do not currently have any pending requests</span>
+        <% else %>
+          <% FriendRequest.where(friend_id: current_user.id).each do |incoming| %>
+          <div class="col-lg-4 d-flex align-items-stretch">
+            <div class="card" style="width: 100%;">
+              <img src="..." class="card-img-top" alt="...">
+              <% @friend_request = incoming %>
+              <div class="card-body">
+                <h5 class="card-title"><%= User.find(@friend_request.user_id).name %></h5>
+                <div class="row mt-3 mb-1">
+                        <%= button_to "Confirm", friend_request_path(@friend_request), class: 'btn btn-primary btn-block' %>
+                </div>
+                <div class="row">
+                        <%= button_to "Ignore", friend_request_path(@friend_request), method: :delete, class: 'btn btn-secondary btn-block' %>
+                </div>
+              </div>
+            </div>
+            </div>
+          <% end %>
+        <% end %>
+
+    </div>
+    <hr/>
+    <div class="row">
+    <% @users = User.all %>
+    <% @friend_ids = [] %>
+    <% @friends = Friendship.where(user_id: current_user.id).each { |f| @friend_ids << f.friend_id } %>
+
+    <h2>People you may know</h2>
+      <% @users.each do |user| %>
+        <%  if user.id != current_user.id && !@friends.include?(user.id) %>
+        <div class="col-lg-4 d-flex align-items-stretch">
+            <div class="card" style="width: 18rem;">
+                <img src="..." class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title"><%= link_to user.name, user_path(user.id), class: 'text-reset text-decoration-none' %></h5>
+                  <%= button_to "Add friend", friend_requests_path, method: :post, params: { friend_id: params[:id] }, class: 'btn btn-primary' %>
+
+                </div>
             </div>
         </div>
-    </div>
-    <% end %>
-    <% end %>
-  </div>
+        <% end %>
+      <% end %>
 
 </div>

@@ -7,7 +7,128 @@
     <title>Document</title>
 </head>
 <body>
-    <%= button_to "Send friend request", friend_requests_path, method: :post, params: { friend_id: params[:id] } %>
+    <div class="container">
+    <div class="card mt-5 mb-4">
+    <div class="row text-center mt-5 mb-5 ml-3 mr-3">
+        <div class="col align-left">
+            <% if current_user.image.attached? %>
+              <%= image_tag(current_user.image, style: 'display: inline-block;
+                                                      height: 150px;
+                                                      width: 150px;
+                                                      border-radius: 50%;
+                                                      object-fit: cover;') %>
+            <% else %>
+              <i class="material-icons right">category</i>
+            <% end %>
+        </div>
+        <div class="col-6">
+            <h2><%= current_user.name %></h2>
+        </div>
+        <div class="col"><%= link_to "Edit user info", edit_user_registration_path, class: 'btn btn-secondary' %></div>
+    </div>
+    </div>
+    <div class="row">
+        <div class="col">
+            <div class="row w-100">
+                <div class="card" style="width: 18rem;">
+                  <div class="card-body">
+                    <h4 class="card-title">Intro</h4>
 
+                  <ul class="list-group list-group-flush">
+                    <li class="list-group-item">Studied at <strong><%= current_user.university %></strong></li>
+                    <li class="list-group-item">Went to <strong><%= current_user.school %></strong></li>
+                    <li class="list-group-item">Lives in <strong><%= current_user.city %></strong></li>
+                  </ul>
+                </div>
+            </div>
+            </div>
+            <div class="row w-100">
+                <h4>Friends</h4>
+                <% current_user.friends.each do |f| %>
+                <div class="col-sm-4">
+                    <div class="card">
+                        <% if f.image.attached? %>
+                          <%= image_tag(f.image, style: 'display: inline-block;
+                                                                  height: 75px;
+                                                                  width: 75px;
+                                                                  object-fit: cover;') %>
+                        <% else %>
+                          <%= image_tag '/assets/images/defaultav.png', class: "card-img-top" %>
+                        <% end %>
+                      <div class="card-title">
+                        <h5 class="card-title"><%= f.name %></h5>
+                      </div>
+                    </div>
+                </div>
+                <% end %>
+            </div>
+        </div>
+        <div class="col">
+            <div class="row">
+                <%= render 'posts/form' %>
+            </div>
+            <div class="row">
+                <% if current_user.posts.empty? %>
+                    Write your first post!
+                <% else %>
+                    <% @posts = current_user.posts.order(created_at: :desc) %>
+                    <% @posts.each do |post| %>
+                    <div class="card" style="width: 36rem;">
+                      <div class="card-body">
+                        <h6 class="card-subtitle mb-2 text-muted"><%= (User.find(post.user_id)).name %></h6>
+                        <p class="text-muted">at <%= post.created_at.to_date > Time.now.to_date ? post.created_at.to_fs(:rfc822) : post.created_at.to_fs(:time) %></p>
+                        <p class="card-text"><%= post.body %></p>
+                      </div>
+                      <div class="row">
+                          <div class="col">
+                              <%= link_to "Comments (#{post.comments.count})", post_path(post.id), class: "card-link" %>
+                          </div>
+                          <div class="col">
+                              <div class="row">
+                                  <% if post.likes.where(:user_id => current_user.id).empty? %>
+                                  <div class="col">
+                                          <% if post.likes.count == 0 %>
+                                              <span>No likes</span>
+                                          <% elsif post.likes.count == 1 %>
+                                              <span><%= User.find(post.likes.first.user_id).name %> likes this</span>
+                                          <% else %>
+                                              <span><%= User.find(post.likes.first.user_id).name %> and <%= post.likes.count - 1 %> others like this</span>
+                                          <% end %>
+                                  </div>
+                                  <div class="col">
+                                      <%= form_tag likes_path do %>
+                                        <%= hidden_field_tag :post_id, post.id %>
+                                        <%= submit_tag 'Like', class: 'btn btn-primary btn-sm' %>
+                                      <% end %>
+                                  </div>
+                              <% else %>
+                                  <div class="col">
+                                      <% if post.likes.count == 1 %>
+                                          <span>You like this</span>
+                                      <% else %>
+                                          <span>You and <%= post.likes.count -1 %> others like this</span>
+                                      <% end %>
+                                  </div>
+                                  <div class="col">
+                                      <%= form_tag like_path(post.likes.where(:user_id => current_user.id)[0].id), method: :delete do %>
+                                        <%= hidden_field_tag :post_id, post.id %>
+                                        <%= submit_tag 'Unlike', class: 'btn btn-secondary btn-sm' %>
+                                      <% end %>
+                                  </div>
+                             <% end %>
+                             </div>
+                          </div>
+
+                     </div>
+                    </div>
+                <% end %>
+                <% end %>
+
+            </div>
+        </div>
+    </div>
+
+
+</div>
 </body>
 </html>

@@ -10,7 +10,7 @@
     <%= javascript_include_tag "application", "data-turbolinks-track": "reload", defer: true %>
   </head>
 
-  <body>
+  <body class="bg-light bg-gradient">
     <% if user_signed_in? %>
         <%= render 'layouts/navbar' %>
     <% end %>

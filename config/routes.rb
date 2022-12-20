@@ -3,8 +3,10 @@ Rails.application.routes.draw do
   root 'pages#home'
 
   devise_for :users, controllers: {
-                        omniauth_callbacks: 'omniauth'
+                        omniauth_callbacks: 'omniauth',
+                        registrations:  'users/registrations'
                     }
+  
 
   resources :friends, only: [:index, :destroy, :create] do
       resources :friend_requests do
@@ -22,6 +24,7 @@ Rails.application.routes.draw do
   resources :friend_requests do
       member do
           post 'update'
+          delete 'destroy'
       end
   end
 

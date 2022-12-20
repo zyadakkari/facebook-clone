@@ -1,5 +1,5 @@
 <% @posts.each do |post| %>
-<div class="card" style="width: 36rem;">
+<div class="card px-4 mb-2" style="width: 100%;">
   <div class="card-body">
     <h6 class="card-subtitle mb-2 text-muted"><%= (User.find(post.user_id)).name %></h6>
     <p class="text-muted">at <%= post.created_at.to_date > Time.now.to_date ? post.created_at.to_fs(:rfc822) : post.created_at.to_fs(:time) %></p>

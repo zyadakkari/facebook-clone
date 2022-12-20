@@ -27,6 +27,17 @@
         <li class="nav-item active">
           <%= link_to "Sign out", destroy_user_session_path, class: 'nav-link sr-only text-white text-muted', method: :delete %>
         </li>
+        <li class="nav-item">
+          <% if current_user.image.attached? %>
+            <%= image_tag(current_user.image, style: 'display: inline-block;
+                                                        height: 50px;
+                                                        width: 50px;
+                                                        border-radius: 50%;
+                                                        object-fit: cover;') %>
+          <% else %>
+              <i class="material-icons right">category</i>
+        <% end %>
+        </li>
       </ul>
       <form class="d-flex" role="search">
         <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">

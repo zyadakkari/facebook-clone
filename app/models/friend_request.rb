@@ -8,6 +8,7 @@ class FriendRequest < ApplicationRecord
     friendship = user.friendships.build(:friend_id => friend.id)
     destroy
     friendship.save
+    redirect_to 'friends/index'
   end
 
   private

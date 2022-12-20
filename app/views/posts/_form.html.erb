@@ -2,12 +2,30 @@
 <%= simple_form_for(@post) do |f| %>
   <%= f.error_notification %>
   <%= f.error_notification message: f.object.errors[:base].to_sentence if f.object.errors[:base].present? %>
+  <div class="card mb-3 pt-3 pb-1 pl-3 pr-3">
+      <div class="row">
 
-  <div class="form-inputs " style="width: 36rem;">
-      <%= f.input :body, placeholder: "What's on your mind, #{current_user.name}?", label: false %>
-  </div>
+          <div class="col-sm-2">
+              <% if current_user.image.attached? %>
+                <%= image_tag(current_user.image, style: 'display: inline-block;
+                                                        height: 75px;
+                                                        width: 75px;
+                                                        border-radius: 50%;
+                                                        object-fit: cover;') %>
+              <% else %>
+                <i class="material-icons right">category</i>
+              <% end %>
+          </div>
+          <div class="col-sm-9">
+                  <%= f.input :body, placeholder: "What's on your mind, #{current_user.name}?", label: false %>
+          </div>
+      </div>
+      <div class="row mt-2 mb-5">
+          <div class="col-sm-2"></div>
+          <div class="col-sm-9">
+              <%= f.button :submit, 'Post', class: 'btn btn-primary', style: 'width: 100%' %>
+          </div>
 
-  <div class="form-actions d-grid gap-2 col-4 mt-1 mb-4">
-    <%= f.button :submit, 'Post', class: 'btn btn-primary btn-block' %>
+      </div>
+      <% end %>
   </div>
-<% end %>
